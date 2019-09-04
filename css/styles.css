@@ -1,0 +1,54 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+
+.navbar {
+    border-top:5px solid #6db33f;
+    display:flex;
+    justify-content: center;
+    
+    background-color:#34302d;
+}
+.header--container {
+    background-color:#34302d;
+    width:65%;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.spring-logo {
+    margin: 10px 0;
+    min-width:250px;
+    height: 50px;
+    display:inline-block;  
+    background: url("../img/spring-logo.png") 0px 2px no-repeat ;
+}
+.header-menu {
+    
+    display:flex;
+    flex-direction: column;
+    
+}
+.header-menu-list {
+    flex-grow: 1;
+    display:flex;
+    list-style:none;
+    align-content: space-between;
+    background-color:red;
+}
+
+
+.header-menu-link {
+   
+    padding-right:20px;
+    text-transform: uppercase;
+    color: #eee;
+    text-decoration:none;
+    
+    font-weight: 800;    
+}
