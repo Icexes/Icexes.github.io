@@ -1,23 +1,30 @@
 *, *:before, *:after {
     box-sizing: border-box;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0; 
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #f1f1f1;
+    font-family: "PT Sans", "Arial", sans-serif;
 
 }
 
+.container-fluid {
+    max-width: 1024px;
+    margin:0 auto;
+}
+
 .header--container { 
-    
-    margin: 0;
-    padding: 0; 
     position: relative;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    border-top: 5px solid #6db33f;
     background-color:#34302d;
 }
 
@@ -41,29 +48,86 @@ body {
     color: #fff;
     text-decoration:none;
     font-weight: bold;
-    padding:20px;
+    padding:28px 20px;
 }
 
 .header-menu-link:hover {
     background-color: #6db33f;
 }
 .navbar {
-    max-width: 1024px;
-    margin:0 auto;
-    
+
     display:flex;
     justify-content: space-between;
 }
 .spring-logo {
+  
+    margin-top: 12px;
     display:inline-block;
-    
     min-width:250px;
     height: 50px;
-    
-    background: url("../img/spring-logo.png") 1px 0px no-repeat ;
+    background: url("../img/spring-logo.png") 0px 2px no-repeat ;
+
 }
 .spring-logo:hover {
-    background: url("../img/spring-logo.png") -0px -45.6px no-repeat ;
+    background: url("../img/spring-logo.png") 0px -45.6px no-repeat ;
+}
+
+p {
+    margin-top:25px;
+    margin-bottom: 50px;
+    font-family: varela round,sans-serif;
+    font-weight: bold;
+    font-size:16px;
+    color: #34302d;
+}
+h1 {
+    font-family: Montserrat,sans-serif;
+    font-size:24px;
+}
+article {
+    margin-top: 100px;
+}
+
+.cards {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    padding:20px 40px;
+    width:32.3%;
+    height:350px;
+    border: 1px solid #ddd;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    text-decoration: none;
+}
+.card-icon--container {
+    height: 135px;
+   
 }
 
 
+
+.icon-1 {
+    position:relative;
+    width: 102px;
+    height: 90px;
+    margin: 0 auto;
+    top:25px;
+    background: url("../img/iconsprite.png") no-repeat ;
+    background-position: -858px -363px; 
+    
+    
+}
+.card-title {
+    text-align:center;
+    text-transform: uppercase;
+}
+.card-description {
+   
+    text-align: center;
+}
