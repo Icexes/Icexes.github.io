@@ -1,54 +1,69 @@
 *, *:before, *:after {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
     margin: 0px;
+    padding: 0px;
+
 }
 
+.header--container { 
+    
+    margin: 0;
+    padding: 0; 
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color:#34302d;
+}
 
-.navbar {
-    border-top:5px solid #6db33f;
-    display:flex;
-    justify-content: center;
-    
-    background-color:#34302d;
-}
-.header--container {
-    background-color:#34302d;
-    width:65%;
-    display:flex;
-    justify-content: space-between;
-    
-}
-.spring-logo {
-    margin: 10px 0;
-    min-width:250px;
-    height: 50px;
-    display:inline-block;  
-    background: url("../img/spring-logo.png") 0px 2px no-repeat ;
-}
-.header-menu {
-    
-    display:flex;
-    flex-direction: column;
-    
-}
 .header-menu-list {
-    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    
     display:flex;
-    list-style:none;
-    align-content: space-between;
-    background-color:red;
+    justify-content: space-around;
+    list-style: none;
 }
-
+.header-menu-item {
+    color: #fff;
+    
+}
 
 .header-menu-link {
-   
-    padding-right:20px;
+    display: block;
     text-transform: uppercase;
-    color: #eee;
+    color: #fff;
     text-decoration:none;
-    
-    font-weight: 800;    
+    font-weight: bold;
+    padding:20px;
 }
+
+.header-menu-link:hover {
+    background-color: #6db33f;
+}
+.navbar {
+    max-width: 1024px;
+    margin:0 auto;
+    
+    display:flex;
+    justify-content: space-between;
+}
+.spring-logo {
+    display:inline-block;
+    
+    min-width:250px;
+    height: 50px;
+    
+    background: url("../img/spring-logo.png") 1px 0px no-repeat ;
+}
+.spring-logo:hover {
+    background: url("../img/spring-logo.png") -0px -45.6px no-repeat ;
+}
+
+
