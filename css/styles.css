@@ -1,8 +1,10 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     font-family: sans-serif;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 body {
@@ -20,109 +22,121 @@ body {
         max-width: 100%;
         padding: 0 10px;
     }
+
     .header-menu {
-        display:none;
+        display: none;
     }
+
     .header--container {
-        border:none !important;
+        border: none !important;
     }
+
     .spring-logo--container {
 
-        margin: 0 auto;       
+        margin: 0 auto;
     }
+
     .spring-logo {
 
-        width:102px !important;
+        width: 102px !important;
         height: 30px !important;
-        background: url("../img/spring-logo.png") 0px -30px  no-repeat !important ;
+        background: url("../img/spring-logo.png") 0px -30px no-repeat !important;
         background-size: 140% !important;
         margin: 10px 0px;
     }
+
     article {
         margin-top: 10px !important;
     }
+
     .card {
-        flex-grow:2;
+        flex-grow: 2;
     }
 }
 
 .container-fluid {
     max-width: 1024px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.header--container { 
+.header--container {
     position: relative;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-top: 5px solid #6db33f;
-    background-color:#34302d;
+    background-color: #34302d;
 }
 
 .header-menu-list {
     margin: 0;
     padding: 0;
-    width:100%;
-    
-    display:flex;
+    width: 100%;
+
+    display: flex;
     justify-content: space-around;
     list-style: none;
 }
+
 .header-menu-item {
     color: #fff;
-    
+
 }
 
 .header-menu-link {
     display: block;
     text-transform: uppercase;
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
     font-weight: bold;
-    padding:28px 20px;
+    padding: 28px 20px;
 }
 
 .header-menu-link:hover {
     background-color: #6db33f;
 }
+
 .navbar {
 
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
 .spring-logo--container {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 }
+
 .spring-logo {
-  
-    
-    display:inline-block;
+
+
+    display: inline-block;
     background-size: cover;
-    width:224px;
+    width: 224px;
     height: 46px;
-    background: url("../img/spring-logo.png")  no-repeat ;
+    background: url("../img/spring-logo.png") no-repeat;
 
 }
+
 .spring-logo:hover {
-    background: url("../img/spring-logo.png") 0px -47px no-repeat ;
+    background: url("../img/spring-logo.png") 0px -47px no-repeat;
 }
 
 p {
-    margin-top:25px;
+    margin-top: 25px;
     margin-bottom: 50px;
-    font-family: varela round,sans-serif;
+    font-family: varela round, sans-serif;
     font-weight: bold;
-    font-size:16px;
+    font-size: 16px;
     color: #34302d;
 }
+
 h1 {
-    font-family: Montserrat,sans-serif;
-    font-size:24px;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
 }
+
 article {
     margin-top: 100px;
 }
@@ -133,65 +147,70 @@ article {
     flex-basis: 200px;
     justify-content: space-between;
 }
+
 .card {
-    padding:20px 5%;
-    width:330px;
-    height:402px;
+    padding: 20px 5%;
+    width: 330px;
+    height: 402px;
     border: 1px solid #ddd;
     margin-bottom: 2%;
     margin-right: 1%;
     display: flex;
     flex-direction: column;
-    
-    
+
+
     text-decoration: none;
 }
+
 .card-icon--container {
     display: flex;
     height: 135px;
-   
+
 }
+
 .card-icon {
-    position:relative;
+    position: relative;
     margin: 0 auto;
-    
+
 
 }
 
 .icon-1 {
-    
+
     align-self: center;
     width: 102px;
-    height: 90px;    
-    background: url("../img/iconsprite.png") no-repeat ;
-    background-position: -858px -363px; 
-    
-    
+    height: 90px;
+    background: url("../img/iconsprite.png") no-repeat;
+    background-position: -858px -363px;
+
+
 }
+
 .icon-2 {
-     
+
     width: 135px;
     height: 133px;
-    background: url("../img/iconsprite.png") no-repeat ;
-    background-position: -483px -363px;    
+    background: url("../img/iconsprite.png") no-repeat;
+    background-position: -483px -363px;
 }
 
 .icon-3 {
-     align-self: center;
+    align-self: center;
     width: 130px;
     height: 105px;
-    background: url("../img/iconsprite.png") no-repeat ;
-    background-position: -333px -133px;    
+    background: url("../img/iconsprite.png") no-repeat;
+    background-position: -333px -133px;
 }
 
 
 .card-title {
-    margin-top:25px;
-    
+    margin-top: 25px;
+
     flex-shrink: 0;
-    text-align:center;
+    text-align: center;
     text-transform: uppercase;
 }
+
 .card-description {
     flex-shrink: 0;
     text-align: center;
