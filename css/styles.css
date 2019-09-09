@@ -13,6 +13,39 @@ body {
 
 }
 
+
+
+@media (min-width: 600px) and (max-width: 1037px) {
+    .container-fluid {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header-menu {
+        display:none;
+    }
+    .header--container {
+        border:none !important;
+    }
+    .spring-logo--container {
+
+        margin: 0 auto;       
+    }
+    .spring-logo {
+
+        width:102px !important;
+        height: 30px !important;
+        background: url("../img/spring-logo.png") 0px -30px  no-repeat !important ;
+        background-size: 140% !important;
+        margin: 10px 0px;
+    }
+    article {
+        margin-top: 10px !important;
+    }
+    .card {
+        flex-grow:2;
+    }
+}
+
 .container-fluid {
     max-width: 1024px;
     margin:0 auto;
@@ -59,17 +92,23 @@ body {
     display:flex;
     justify-content: space-between;
 }
+
+.spring-logo--container {
+    display:flex;
+    align-items:center;
+}
 .spring-logo {
   
-    margin-top: 12px;
+    
     display:inline-block;
-    min-width:250px;
-    height: 50px;
-    background: url("../img/spring-logo.png") 0px 2px no-repeat ;
+    background-size: cover;
+    width:224px;
+    height: 46px;
+    background: url("../img/spring-logo.png")  no-repeat ;
 
 }
 .spring-logo:hover {
-    background: url("../img/spring-logo.png") 0px -45.6px no-repeat ;
+    background: url("../img/spring-logo.png") 0px -47px no-repeat ;
 }
 
 p {
@@ -89,45 +128,71 @@ article {
 }
 
 .cards {
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px;
     justify-content: space-between;
 }
 .card {
-    padding:20px 40px;
-    width:32.3%;
-    height:350px;
+    padding:20px 5%;
+    width:330px;
+    height:402px;
     border: 1px solid #ddd;
     margin-bottom: 2%;
+    margin-right: 1%;
     display: flex;
     flex-direction: column;
     
-    justify-content: space-around;
+    
     text-decoration: none;
 }
 .card-icon--container {
+    display: flex;
     height: 135px;
    
 }
+.card-icon {
+    position:relative;
+    margin: 0 auto;
+    
 
-
+}
 
 .icon-1 {
-    position:relative;
+    
+    align-self: center;
     width: 102px;
-    height: 90px;
-    margin: 0 auto;
-    top:25px;
+    height: 90px;    
     background: url("../img/iconsprite.png") no-repeat ;
     background-position: -858px -363px; 
     
     
 }
+.icon-2 {
+     
+    width: 135px;
+    height: 133px;
+    background: url("../img/iconsprite.png") no-repeat ;
+    background-position: -483px -363px;    
+}
+
+.icon-3 {
+     align-self: center;
+    width: 130px;
+    height: 105px;
+    background: url("../img/iconsprite.png") no-repeat ;
+    background-position: -333px -133px;    
+}
+
+
 .card-title {
+    margin-top:25px;
+    
+    flex-shrink: 0;
     text-align:center;
     text-transform: uppercase;
 }
 .card-description {
-   
+    flex-shrink: 0;
     text-align: center;
 }
