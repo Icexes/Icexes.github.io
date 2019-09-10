@@ -15,6 +15,7 @@ body {
     font-size: 14px;
 
 }
+
 h1,
 h2,
 h3 {
@@ -34,12 +35,13 @@ h3 {
 
     .header--container {
         border: none !important;
-        height:50px;
+        height: 50px;
     }
 
     .menu-button {
         display: flex !important;
     }
+
     .spring-logo--container {
         margin: 0 auto;
     }
@@ -103,7 +105,8 @@ h3 {
     font-family: Montserrat, sans-serif;
 }
 
-.header-menu-link:hover {
+.header-menu-link:hover,
+.active-menu-link {
     background-color: #6db33f;
 }
 
@@ -111,16 +114,18 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+
 .menu-button {
     display: none;
-    border:none;
+    border: none;
     margin-left: -30px;
     background-color: transparent;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 70px;
 }
+
 .menu-button--line {
     display: block;
     width: 20px;
