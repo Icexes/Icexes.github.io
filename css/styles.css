@@ -2,16 +2,23 @@
 *:before,
 *:after {
     box-sizing: border-box;
-   
+
     margin: 0;
     padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #34302d;
 }
 
 body {
     margin: 0px;
     padding: 0px;
     background-color: #f1f1f1;
-    font-family: varela round,sans-serif;
+    font-family: varela round, sans-serif;
+    font-size: 14px;
 
 }
 
@@ -89,8 +96,10 @@ body {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     padding: 28px 20px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
 }
 
 .header-menu-link:hover {
@@ -124,7 +133,7 @@ p {
     margin-top: 25px;
     margin-bottom: 50px;
     font-family: varela round, sans-serif;
-    font-weight: bold;
+    line-height: 24px;
     font-size: 16px;
     color: #34302d;
 }
@@ -142,11 +151,15 @@ h1 {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 200px;   
+    flex-basis: 200px;
 }
 
 .card {
     padding: 20px 5%;
+    /*
+    flex-grow: 2;
+    flex-basis:264px;
+    */
     width: 330px;
     height: 402px;
     border: 1px solid #ddd;
@@ -154,9 +167,12 @@ h1 {
     margin-right: 1%;
     display: flex;
     flex-direction: column;
-
-
     text-decoration: none;
+}
+
+.card:hover {
+    border-color: #34302d;
+    transition: 0.3s;
 }
 
 .card-icon--container {
@@ -165,6 +181,7 @@ h1 {
 }
 
 .card-icon {
+
     position: relative;
     margin: 0 auto;
 }
@@ -193,19 +210,21 @@ h1 {
     background-position: -333px -133px;
 }
 
-.icon-4 {  
+.icon-4 {
     width: 150px;
     height: 111px;
     background: url("../img/iconsprite.png") no-repeat;
     background-position: -748px -245px;
 }
-.icon-5 {  
+
+.icon-5 {
     width: 111px;
     height: 111px;
     background: url("../img/iconsprite.png") no-repeat;
     background-position: -483px -688px;
 }
-.icon-6 {  
+
+.icon-6 {
     width: 145px;
     height: 104px;
     background: url("../img/iconsprite.png") no-repeat;
@@ -214,42 +233,50 @@ h1 {
 
 .card-title {
     margin-top: 25px;
-
-    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
 
-.card-description {
-    flex-shrink: 0;
+p.card-description {
+    font-style: 14px;
+    line-height: 20px;
     text-align: center;
+    color: #34302d;
 }
 
 .footer {
-    
+
     padding: 30px 0;
     background-color: #34302d;
     color: #fff;
 }
+
 .footer a {
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 .footer-menu {
     margin-bottom: 30px;
-    
+
 }
+
 .footer-menu-list {
-    display:flex;
-    list-style:none;
-    margin-bottom:10px;
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
 }
+
 .footer-menu-item {
-   font-size:12px;
-   line-height: 12px;
-   margin-right: 50px;
-   text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 40px;
+    text-transform: uppercase;
 }
+
 .copyrights a {
     color: #6db33f;
 }
