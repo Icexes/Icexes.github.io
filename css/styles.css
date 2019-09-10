@@ -2,7 +2,7 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    font-family: sans-serif;
+   
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #f1f1f1;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: varela round,sans-serif;
 
 }
 
@@ -109,14 +109,11 @@ body {
 }
 
 .spring-logo {
-
-
     display: inline-block;
     background-size: cover;
     width: 224px;
     height: 46px;
     background: url("../img/spring-logo.png") no-repeat;
-
 }
 
 .spring-logo:hover {
@@ -145,8 +142,7 @@ h1 {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 200px;
-    
+    flex-basis: 200px;   
 }
 
 .card {
@@ -166,25 +162,19 @@ h1 {
 .card-icon--container {
     display: flex;
     height: 135px;
-
 }
 
 .card-icon {
     position: relative;
     margin: 0 auto;
-
-
 }
 
 .icon-1 {
-
     align-self: center;
     width: 102px;
     height: 90px;
     background: url("../img/iconsprite.png") no-repeat;
     background-position: -858px -363px;
-
-
 }
 
 .icon-2 {
@@ -236,5 +226,30 @@ h1 {
 }
 
 .footer {
+    
     padding: 30px 0;
+    background-color: #34302d;
+    color: #fff;
+}
+.footer a {
+    color: #fff;
+    text-decoration:none;
+}
+.footer-menu {
+    margin-bottom: 30px;
+    
+}
+.footer-menu-list {
+    display:flex;
+    list-style:none;
+    margin-bottom:10px;
+}
+.footer-menu-item {
+   font-size:12px;
+   line-height: 12px;
+   margin-right: 50px;
+   text-transform: uppercase;
+}
+.copyrights a {
+    color: #6db33f;
 }
