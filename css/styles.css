@@ -18,7 +18,7 @@ body {
 
 
 @media (min-width: 600px) and (max-width: 1037px) {
-    .container-fluid {
+    .container-wrap {
         max-width: 100%;
         padding: 0 10px;
     }
@@ -54,7 +54,7 @@ body {
     }
 }
 
-.container-fluid {
+.container-wrap {
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -137,15 +137,16 @@ h1 {
     font-size: 24px;
 }
 
-article {
+.main-project {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 200px;
-    justify-content: space-between;
+    
 }
 
 .card {
@@ -202,6 +203,24 @@ article {
     background-position: -333px -133px;
 }
 
+.icon-4 {  
+    width: 150px;
+    height: 111px;
+    background: url("../img/iconsprite.png") no-repeat;
+    background-position: -748px -245px;
+}
+.icon-5 {  
+    width: 111px;
+    height: 111px;
+    background: url("../img/iconsprite.png") no-repeat;
+    background-position: -483px -688px;
+}
+.icon-6 {  
+    width: 145px;
+    height: 104px;
+    background: url("../img/iconsprite.png") no-repeat;
+    background-position: -640px -523px;
+}
 
 .card-title {
     margin-top: 25px;
@@ -214,4 +233,8 @@ article {
 .card-description {
     flex-shrink: 0;
     text-align: center;
+}
+
+.footer {
+    padding: 30px 0;
 }
