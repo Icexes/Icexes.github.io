@@ -30,7 +30,7 @@ h3 {
     }
 
     .header-menu {
-        display: none !important; 
+        display: none !important;
     }
 
     .header {
@@ -42,16 +42,15 @@ h3 {
         display: flex !important;
     }
 
-    .spring-logo--container {
-        margin: 0 auto;
+    .navbar__logo {
+        margin: 10px auto;
     }
 
-    .spring-logo {
+    .logo__img {
         width: 102px !important;
-        height: 30px !important;       
+        height: 30px !important;
         background-position: 0px -30px !important;
         background-size: 140% !important;
-        margin: 10px 0px;
     }
 
     article {
@@ -62,6 +61,7 @@ h3 {
         flex-grow: 2;
     }
 }
+
 /*Заканчивается применение медиа запроса */
 
 .container-wrap {
@@ -77,15 +77,10 @@ h3 {
 }
 
 .header-menu {
-    
+
     display: flex;
     justify-content: space-between;
     list-style: none;
-}
-
-.header-menu__item {
-    color: #fff;
-
 }
 
 .header-menu__link {
@@ -111,7 +106,7 @@ h3 {
 
 .menu-button {
     display: none;
-    border: none;  
+    border: none;
     background-color: transparent;
     align-items: center;
     flex-direction: column;
@@ -131,12 +126,12 @@ h3 {
     margin: 2px 0;
 }
 
-.spring-logo--container {
+.navbar__logo {
     display: flex;
     align-items: center;
 }
 
-.spring-logo {
+.logo__img {
     display: block;
     background-size: cover;
     width: 224px;
@@ -144,8 +139,8 @@ h3 {
     background: url("../img/spring-logo.png") no-repeat;
 }
 
-.spring-logo:hover {
-    background: url("../img/spring-logo.png") 0px -47px no-repeat;
+.logo__img:hover {
+    background-position: 0px -47px;
 }
 
 p {
