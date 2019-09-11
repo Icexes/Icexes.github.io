@@ -19,9 +19,14 @@ body {
 h1,
 h2,
 h3 {
+    font-family: Montserrat, sans-serif;
     color: #34302d;
 }
 
+h1 {
+
+    font-size: 24px;
+}
 
 @media (min-width: 600px) and (max-width: 1037px) {
     .container-wrap {
@@ -58,6 +63,7 @@ h3 {
     }
 
     .card {
+        /* min-width: 273px; */
         flex-grow: 2;
     }
 }
@@ -144,28 +150,43 @@ h3 {
 }
 
 p {
-    margin-top: 25px;
-    margin-bottom: 50px;
     font-family: varela round, sans-serif;
     line-height: 24px;
     font-size: 16px;
     color: #34302d;
+
 }
 
-h1 {
-    font-family: Montserrat, sans-serif;
-    font-size: 24px;
-}
+
+
 
 .main-project {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
+.page-title__size_s {
+    font-size: 18px;
+}
+
+.page--subtitle {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 200px;
+
+}
+
+.cards_separator_top {
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+.cards_border_top {
+    border-top: 1px solid #ddd;
 }
 
 .card {
@@ -183,6 +204,10 @@ h1 {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+}
+
+.card_height_s {
+    height: 222px;
 }
 
 .card:hover {
@@ -251,13 +276,15 @@ h1 {
     margin-top: 25px;
     font-size: 16px;
     font-weight: 700;
-    font-family: Montserrat, sans-serif;
+
     text-align: center;
     text-transform: uppercase;
 }
 
 .card__description {
-    font-style: 14px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 14px;
     line-height: 20px;
     text-align: center;
     color: #34302d;
