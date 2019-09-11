@@ -30,10 +30,10 @@ h3 {
     }
 
     .header-menu {
-        display: none;
+        display: none !important; 
     }
 
-    .header--container {
+    .header {
         border: none !important;
         height: 50px;
     }
@@ -47,10 +47,9 @@ h3 {
     }
 
     .spring-logo {
-
         width: 102px !important;
-        height: 30px !important;
-        background: url("../img/spring-logo.png") 0px -30px no-repeat !important;
+        height: 30px !important;       
+        background-position: 0px -30px !important;
         background-size: 140% !important;
         margin: 10px 0px;
     }
@@ -63,38 +62,33 @@ h3 {
         flex-grow: 2;
     }
 }
+/*Заканчивается применение медиа запроса */
 
 .container-wrap {
     max-width: 1024px;
     margin: 0 auto;
 }
 
-.header--container {
+.header {
     position: relative;
     width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     border-top: 5px solid #6db33f;
     background-color: #34302d;
 }
 
-.header-menu-list {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
+.header-menu {
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
 }
 
-.header-menu-item {
+.header-menu__item {
     color: #fff;
 
 }
 
-.header-menu-link {
+.header-menu__link {
     display: block;
     text-transform: uppercase;
     color: #fff;
@@ -105,8 +99,8 @@ h3 {
     font-family: Montserrat, sans-serif;
 }
 
-.header-menu-link:hover,
-.active-menu-link {
+.header-menu__link:hover,
+.header-menu__link_bg-color_green {
     background-color: #6db33f;
 }
 
@@ -117,8 +111,7 @@ h3 {
 
 .menu-button {
     display: none;
-    border: none;
-    margin-left: -30px;
+    border: none;  
     background-color: transparent;
     align-items: center;
     flex-direction: column;
@@ -126,7 +119,11 @@ h3 {
     width: 70px;
 }
 
-.menu-button--line {
+.navbar__menu-button {
+    margin-left: -30px;
+}
+
+.menu-button__line {
     display: block;
     width: 20px;
     height: 3px;
@@ -140,7 +137,7 @@ h3 {
 }
 
 .spring-logo {
-    display: inline-block;
+    display: block;
     background-size: cover;
     width: 224px;
     height: 46px;
@@ -254,7 +251,7 @@ h1 {
     background-position: -640px -523px;
 }
 
-.card-title {
+.card__title {
     text-decoration: none;
     margin-top: 25px;
     font-size: 16px;
@@ -264,7 +261,7 @@ h1 {
     text-transform: uppercase;
 }
 
-p.card-description {
+.card__description {
     font-style: 14px;
     line-height: 20px;
     text-align: center;
