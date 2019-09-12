@@ -1,3 +1,4 @@
+
 *,
 *:before,
 *:after {
@@ -63,10 +64,11 @@ h1 {
     }
 
     .card {
-
         flex-basis: 40% !important;
-        min-width: 274px;    
+        min-width: 274px; 
+        flex-grow:1;   
     }
+
 }
 
 /*Заканчивается применение медиа запроса */
@@ -88,6 +90,7 @@ h1 {
 
     display: flex;
     justify-content: space-between;
+    
     list-style: none;
 }
 
@@ -101,7 +104,16 @@ h1 {
     font-size: 14px;
     font-family: Montserrat, sans-serif;
 }
+.header-menu__item:last-child > .header-menu__link {
+    padding-top: 19px;
+}
 
+.header-menu__search-icon { 
+    position: relative;
+    top:8px;
+    bottom:5px;
+    font-size:26px;     
+}
 .header-menu__link:hover,
 .header-menu__link_bg-color_green {
     background-color: #6db33f;
@@ -191,11 +203,12 @@ p {
 .card {
     padding: 20px 5%;
     
-    flex-grow: 1;
+    
     /*
+    flex-grow: 1;
     flex-basis:264px;
     */
-    flex-basis: 280px;
+    flex-basis: 310px;
     height: 402px;
     color: #34302d;
     border: 1px solid #ddd;
