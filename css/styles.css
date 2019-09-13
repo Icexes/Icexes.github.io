@@ -13,7 +13,6 @@ body {
     background-color: #f1f1f1;
     font-family: varela round, sans-serif;
     font-size: 14px;
-
 }
 
 h1,
@@ -24,31 +23,41 @@ h3 {
 }
 
 h1 {
-
     font-size: 24px;
 }
 
 @media (max-width: 999px) {
+  
+  /*
     .container-wrap {
         max-width: 100%;
-
     }
-
+*/
     .header-menu {
         display: none !important;
     }
 
     .header {
         border: none !important;
-        height: 50px;
+       
+    }
+    .navbar {
+        height:50px;
+        align-items: center; 
     }
 
     .menu-button {
         display: flex !important;
+        border: none;
+        background-color: transparent;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 70px;
     }
 
     .navbar__logo {
-        margin: 10px auto;
+      margin: 0 auto;
     }
 
     .logo__img {
@@ -79,17 +88,39 @@ h1 {
 }
 
 .header {
+    /*
     position: relative;
     width: 100%;
+    */
     border-top: 5px solid #6db33f;
     background-color: #34302d;
 }
 
-.header-menu {
-
+.navbar {
     display: flex;
     justify-content: space-between;
+}
 
+.navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    display: block;
+    background-size: cover;
+    width: 224px;
+    height: 46px;
+    background: url("../img/spring-logo.png") no-repeat;
+}
+
+.logo__img:hover {
+    background-position: 0px -47px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -120,22 +151,12 @@ h1 {
     background-color: #6db33f;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
 .menu-button {
     display: none;
-    border: none;
-    background-color: transparent;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 70px;
+
 }
 
-.navbar__menu-button {
+.mobile-menu__button {
     margin-left: -30px;
 }
 
@@ -145,23 +166,6 @@ h1 {
     height: 3px;
     background-color: #fff;
     margin: 2px 0;
-}
-
-.navbar__logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo__img {
-    display: block;
-    background-size: cover;
-    width: 224px;
-    height: 46px;
-    background: url("../img/spring-logo.png") no-repeat;
-}
-
-.logo__img:hover {
-    background-position: 0px -47px;
 }
 
 p {
@@ -239,44 +243,37 @@ p {
     align-self: center;
     width: 102px;
     height: 90px;
-    background: url("../img/iconsprite.png") no-repeat;
+    
     background-position: -858px -363px;
 }
 
 .icon-2 {
-
     width: 135px;
-    height: 133px;
-    background: url("../img/iconsprite.png") no-repeat;
+    height: 133px;    
     background-position: -483px -363px;
 }
 
 .icon-3 {
-    align-self: center;
     width: 130px;
     height: 105px;
-    background: url("../img/iconsprite.png") no-repeat;
     background-position: -333px -133px;
 }
 
 .icon-4 {
     width: 150px;
-    height: 111px;
-    background: url("../img/iconsprite.png") no-repeat;
+    height: 111px; 
     background-position: -748px -245px;
 }
 
 .icon-5 {
     width: 111px;
-    height: 111px;
-    background: url("../img/iconsprite.png") no-repeat;
+    height: 111px;  
     background-position: -483px -688px;
 }
 
 .icon-6 {
     width: 145px;
     height: 104px;
-    background: url("../img/iconsprite.png") no-repeat;
     background-position: -640px -523px;
 }
 
