@@ -26,27 +26,36 @@ h1 {
     font-size: 24px;
 }
 
+p {
+    font-family: varela round, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #34302d;
+
+}
+
 @media (max-width: 999px) {
-  
-  /*
+
+    /*
     .container-wrap {
         max-width: 100%;
     }
 */
-    .header-menu {
+    .navbar-desktop-menu {
         display: none !important;
     }
 
     .header {
         border: none !important;
-       
-    }
-    .navbar {
-        height:50px;
-        align-items: center; 
+
     }
 
-    .menu-button {
+    .navbar {
+        height: 50px;
+        align-items: center;
+    }
+
+    .mobile-menu-button {
         display: flex !important;
         border: none;
         background-color: transparent;
@@ -57,7 +66,7 @@ h1 {
     }
 
     .navbar__logo {
-      margin: 0 auto;
+        margin: 0 auto;
     }
 
     .logo__img {
@@ -67,7 +76,7 @@ h1 {
         background-size: 140% !important;
     }
 
-    article {
+    .main-content {
         margin-top: 10px !important;
     }
 
@@ -118,13 +127,13 @@ h1 {
     background-position: 0px -47px;
 }
 
-.header-menu {
+.navbar-desktop-menu {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.header-menu__link {
+.navbar-desktop-menu__link {
     display: block;
     text-transform: uppercase;
     color: #fff;
@@ -135,32 +144,31 @@ h1 {
     font-family: Montserrat, sans-serif;
 }
 
-.header-menu__item:last-child>.header-menu__link {
+.navbar-desktop-menu__item:last-child>.navbar-desktop-menu__link {
     padding-top: 19px;
 }
 
-.header-menu__search-icon {
+.navbar-desktop-menu__search-icon {
     position: relative;
     top: 8px;
     bottom: 5px;
     font-size: 26px;
 }
 
-.header-menu__link:hover,
-.header-menu__link_bg-color_green {
+.navbar-desktop-menu__link:hover,
+.navbar-desktop-menu__link_bg-color_green {
     background-color: #6db33f;
 }
 
-.menu-button {
+.mobile-menu-button {
     display: none;
-
 }
 
 .mobile-menu__button {
     margin-left: -30px;
 }
 
-.menu-button__line {
+.mobile-menu-button__line {
     display: block;
     width: 20px;
     height: 3px;
@@ -168,24 +176,16 @@ h1 {
     margin: 2px 0;
 }
 
-p {
-    font-family: varela round, sans-serif;
-    line-height: 24px;
-    font-size: 16px;
-    color: #34302d;
-
-}
-
-.main-project {
+.main-content {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.page-title__size_s {
+.main-content__title_size_s {
     font-size: 18px;
 }
 
-.page--subtitle {
+.main-content__subtitle {
     margin-top: 25px;
     margin-bottom: 50px;
 }
@@ -229,7 +229,7 @@ p {
     transition: 0.3s;
 }
 
-.card-icon--container {
+.card-icon-container {
     display: flex;
     height: 135px;
 }
@@ -243,13 +243,13 @@ p {
     align-self: center;
     width: 102px;
     height: 90px;
-    
+
     background-position: -858px -363px;
 }
 
 .icon-2 {
     width: 135px;
-    height: 133px;    
+    height: 133px;
     background-position: -483px -363px;
 }
 
@@ -261,13 +261,13 @@ p {
 
 .icon-4 {
     width: 150px;
-    height: 111px; 
+    height: 111px;
     background-position: -748px -245px;
 }
 
 .icon-5 {
     width: 111px;
-    height: 111px;  
+    height: 111px;
     background-position: -483px -688px;
 }
 
@@ -409,13 +409,17 @@ p {
 
 }
 
+.footer-menu__list {
+    margin-bottom: 10px;
+
+}
+
 .footer-menu-list {
     display: flex;
     list-style: none;
-    margin-bottom: 10px;
 }
 
-.footer-menu-item {
+.footer-menu-list__item {
     font-size: 12px;
     line-height: 12px;
     margin-right: 40px;
