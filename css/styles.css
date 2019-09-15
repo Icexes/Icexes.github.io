@@ -27,8 +27,8 @@ h1 {
 }
 
 @media (max-width: 999px) {
-  
-  /*
+
+    /*
     .container-wrap {
         max-width: 100%;
     }
@@ -39,11 +39,12 @@ h1 {
 
     .header {
         border: none !important;
-       
+
     }
+
     .navbar {
-        height:50px;
-        align-items: center; 
+        height: 50px;
+        align-items: center;
     }
 
     .menu-button {
@@ -57,7 +58,7 @@ h1 {
     }
 
     .navbar__logo {
-      margin: 0 auto;
+        margin: 0 auto;
     }
 
     .logo__img {
@@ -153,7 +154,6 @@ h1 {
 
 .menu-button {
     display: none;
-
 }
 
 .mobile-menu__button {
@@ -243,13 +243,13 @@ p {
     align-self: center;
     width: 102px;
     height: 90px;
-    
+
     background-position: -858px -363px;
 }
 
 .icon-2 {
     width: 135px;
-    height: 133px;    
+    height: 133px;
     background-position: -483px -363px;
 }
 
@@ -261,13 +261,13 @@ p {
 
 .icon-4 {
     width: 150px;
-    height: 111px; 
+    height: 111px;
     background-position: -748px -245px;
 }
 
 .icon-5 {
     width: 111px;
-    height: 111px;  
+    height: 111px;
     background-position: -483px -688px;
 }
 
