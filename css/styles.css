@@ -2,7 +2,6 @@
 *:before,
 *:after {
     box-sizing: border-box;
-
     margin: 0;
     padding: 0;
 }
@@ -15,39 +14,20 @@ body {
     font-size: 14px;
 }
 
-h1,
-h2,
-h3 {
-    font-family: Montserrat, sans-serif;
-    color: #34302d;
-}
-
-h1 {
-    font-size: 24px;
-}
-
 p {
-    font-family: varela round, sans-serif;
     line-height: 24px;
     font-size: 16px;
     color: #34302d;
-
 }
 
 @media (max-width: 999px) {
 
-    /*
-    .container-wrap {
-        max-width: 100%;
-    }
-*/
     .navbar-desktop-menu {
         display: none !important;
     }
 
     .header {
         border: none !important;
-
     }
 
     .navbar {
@@ -85,7 +65,6 @@ p {
         max-width: none !important;
         min-width: 274px;
     }
-
 }
 
 /*Заканчивается применение медиа запроса */
@@ -97,10 +76,6 @@ p {
 }
 
 .header {
-    /*
-    position: relative;
-    width: 100%;
-    */
     border-top: 5px solid #6db33f;
     background-color: #34302d;
 }
@@ -116,8 +91,6 @@ p {
 }
 
 .logo__img {
-    display: block;
-    background-size: cover;
     width: 224px;
     height: 46px;
     background: url("../img/spring-logo.png") no-repeat;
@@ -181,6 +154,12 @@ p {
     margin-bottom: 100px;
 }
 
+.main-content__title {
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+    color: #34302d;
+}
+
 .main-content__title_size_s {
     font-size: 18px;
 }
@@ -193,7 +172,6 @@ p {
 .cards {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .cards_separator_top {
@@ -234,12 +212,12 @@ p {
     height: 135px;
 }
 
-.card-icon {
+.card-icon-sprite {
     background: url("../img/iconsprite.png") no-repeat;
     margin: 0 auto;
 }
 
-.icon-1 {
+.spring-boot-icon {
     align-self: center;
     width: 102px;
     height: 90px;
@@ -247,127 +225,127 @@ p {
     background-position: -858px -363px;
 }
 
-.icon-2 {
+.spring-framework-icon {
     width: 135px;
     height: 133px;
     background-position: -483px -363px;
 }
 
-.icon-3 {
+.spring-cloud-data-flow-icon {
     width: 130px;
     height: 105px;
     background-position: -333px -133px;
 }
 
-.icon-4 {
+.spring-cloud-icon {
     width: 150px;
     height: 111px;
     background-position: -748px -245px;
 }
 
-.icon-5 {
+.spring-data-icon {
     width: 111px;
     height: 111px;
     background-position: -483px -688px;
 }
 
-.icon-6 {
+.spring-integration-icon {
     width: 145px;
     height: 104px;
     background-position: -640px -523px;
 }
 
-.icon-7 {
+.spring-batch-icon {
     width: 104px;
     height: 108px;
     background-position: -640px -363px;
 }
 
-.icon-8 {
+.spring-security-icon {
     width: 99px;
     height: 137px;
     background-position: -483px -523px;
 }
 
-.icon-9 {
+.spring-hateoas-icon {
     width: 126px;
     height: 99px;
     background-position: -483px -943px;
 }
 
-.icon-10 {
+.spring-rest-docs-icon {
     width: 168px;
     height: 123px;
     background-position: -100px -5px;
 }
 
-.icon-11 {
+.spring-amqp-icon {
     width: 109px;
     height: 98px;
     background-position: -640px -685px;
 }
 
-.icon-12 {
+.spring-mobile-icon {
     width: 104px;
     height: 137px;
     background-position: -804px -523px;
 }
 
-.icon-13 {
+.spring-for-android-icon {
     width: 106px;
     height: 126px;
     background-position: -805px -693px;
 }
 
-.icon-14 {
+.spring-web-flow-icon {
     width: 99px;
     height: 99px;
     background-position: -383px -944px;
 }
 
-.icon-15 {
+.spring-web-services-icon {
     width: 100px;
     height: 100px;
     background-position: bottom -55px right -432px;
 }
 
-.icon-16 {
+.spring-ldap-icon {
     width: 93px;
     height: 105px;
     background-position: top -140px right -132px;
 }
 
-.icon-17 {
+.spring-session-icon {
     width: 120px;
     height: 125px;
     background-position: top -125px right -400px;
 }
 
-.icon-18 {
+.spring-shell-icon {
     width: 135px;
     height: 95px;
     background-position: top -140px right -237px;
 }
 
-.icon-19 {
+.spring-flo-icon {
     width: 135px;
     height: 111px;
     background-position: top -140px right 0px;
 }
 
-.icon-20 {
+.spring-kafka-icon {
     width: 130px;
     height: 116px;
     background-position: top -130px left -184px;
 }
 
-.icon-21 {
+.spring-statemachine-icon {
     width: 105px;
     height: 125px;
     background-position: 0px 0px;
 }
 
-.icon-22 {
+.spring-io-platform-icon {
     width: 116px;
     height: 105px;
     background-position: -337px -243px;
@@ -406,7 +384,6 @@ p {
 
 .footer-menu {
     margin-bottom: 30px;
-
 }
 
 .footer-menu__list {
