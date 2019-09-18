@@ -23,11 +23,11 @@ p {
 @media (max-width: 999px) {
 
     .navbar-desktop-menu {
-        display: none !important;
+        display: none;
     }
 
     .header {
-        border: none !important;
+        border: none;
     }
 
     .navbar {
