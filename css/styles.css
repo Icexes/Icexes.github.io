@@ -20,59 +20,6 @@ p {
     color: #34302d;
 }
 
-@media (max-width: 999px) {
-
-    .navbar-desktop-menu {
-        display: none !important;
-    }
-
-    .header {
-        border: none !important;
-    }
-
-    .navbar {
-        height: 50px;
-        align-items: center;
-    }
-
-    .mobile-menu {
-        display: block !important;
-    }
-
-    .mobile-menu-button {
-        display: flex;
-        border: none;
-        background-color: transparent;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        width: 70px;
-    }
-
-    .navbar__logo {
-        margin: 0 auto;
-    }
-
-    .logo__img {
-        width: 102px !important;
-        height: 30px !important;
-        background-position: 0px -30px !important;
-        background-size: 140% !important;
-    }
-
-    .main-content {
-        margin-top: 10px !important;
-    }
-
-    .card {
-        flex-basis: 40% !important;
-        max-width: none !important;
-        min-width: 274px;
-    }
-}
-
-/*Заканчивается применение медиа запроса */
-
 .container-wrap {
     max-width: 1024px;
     padding: 0 20px;
@@ -82,12 +29,12 @@ p {
 .header {
     border-top: 5px solid #6db33f;
     background-color: #34302d;
- 
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+
 }
 
 .navbar__logo {
@@ -122,6 +69,10 @@ p {
     font-family: Montserrat, sans-serif;
 }
 
+.search-link_clicked {
+    background-color: #6db33f;
+}
+
 .navbar-desktop-menu__item:last-child>.navbar-desktop-menu__link {
     padding-top: 19px;
 }
@@ -144,29 +95,26 @@ p {
     width: 100%;
     background-color: #fff;
     transform: translateY(-200%);
-}
-
-.form-search_hide {
-
+    /* opacity:0;
+    transition: 0.2s;
+    z-index: -1;
+    */
 }
 
 .fas.fa-search.navbar-desktop-menu__search-icon.js-search-input-open,
 .fas.fa-times.icon-remove.js-search-input-close {
-    display: none ;
+    display: none;
 }
 
 .search-form-container_show {
     transform: translateY(0%);
+    opacity: 1;
 
 }
-
 
 .form-search {
     display: flex;
-    align-items: stretch;
-    
 }
-
 
 .form-search-input {
     padding: 25px 0;
@@ -194,8 +142,6 @@ p {
 .search-button__icon {
     font-size: 22px;
 }
-
-
 
 .mobile-menu {
     display: none;
@@ -469,4 +415,56 @@ p {
 
 .copyrights a {
     color: #6db33f;
+}
+
+@media (max-width: 999px) {
+
+    .search-form-container,
+    .navbar-desktop-menu {
+        display: none;
+    }
+
+    .header {
+        border: none;
+    }
+
+    .navbar {
+        height: 50px;
+        align-items: center;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 70px;
+    }
+
+    .navbar__logo {
+        margin: 0 auto;
+    }
+
+    .logo__img {
+        width: 102px;
+        height: 30px;
+        background-position: 0px -30px;
+        background-size: 140%;
+    }
+
+    .main-content {
+        margin-top: 10px;
+    }
+
+    .card {
+        flex-basis: 40%;
+        max-width: none;
+        min-width: 274px;
+    }
 }
