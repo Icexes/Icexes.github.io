@@ -19,16 +19,16 @@
         <div class="container-wrap">
             <div class="navbar">
                 <div class="mobile-menu">
-                    <button class="mobile-menu__button mobile-menu-button button">
-                        <span class="mobile-menu-button__line"></span>
-                        <span class="mobile-menu-button__line"></span>
-                        <span class="mobile-menu-button__line"></span>
+                    <button class="mobile-menu__button  button">
+                        <span class="mobile-menu__line"></span>
+                        <span class="mobile-menu__line"></span>
+                        <span class="mobile-menu__line"></span>
                     </button>
                 </div>
                 <div class="navbar__logo logo">
                     <a class="logo__img" href="#"></a>
                 </div>
-                <ul class="navbar__desktop-menu navbar-desktop-menu">
+                <ul class="navbar-desktop-menu">
                     <li class="navbar-desktop-menu__item"><a href="#"
                             class="navbar-desktop-menu__link navbar-desktop-menu__link_bg-color_green">Projects</a></li>
                     <li class="navbar-desktop-menu__item"><a href="#" class="navbar-desktop-menu__link">Guides</a></li>
@@ -38,16 +38,16 @@
                     </li>
                     <li class="navbar-desktop-menu__item"><a href="#" class="navbar-desktop-menu__link search-link"><i
                                 class="fas fa-search navbar-desktop-menu__search-icon"></i>
-                            <i class="fas fa-times icon-remove js-search-input-close"></i></a></li>
+                           <!-- <i class="fas fa-times icon-remove js-search-input-close"></i>--></a></li> 
                 </ul>
             </div>
         </div>
         <div class="search-form-container">
             <div class="container-wrap">
                 <form class="form-search" action="" method="GET">
-                    <input class="form-search-input" type="text"
+                    <input class="form-search__input" type="text"
                         placeholder="Search for documentation, guides, and posts..." value="">
-                    <button class="form-search_submit search-button button" type="submit">
+                    <button class="form-search__submit search-button button" type="submit">
                         <i class="fas fa-search search-button__icon"></i>
                         </a>
                     </button>
@@ -61,7 +61,7 @@
         <div class="container-wrap">
             <article class="main-content">
                 <h1 class="main-content__title">Main Projects</h1>
-                <p class="main-content__subtitle text">From configuration to security, web apps to big data - whatever
+                <p class="main-content__subtitle">From configuration to security, web apps to big data - whatever
                     the
                     infostructure
                     needs of your
@@ -69,11 +69,11 @@
                     what you need – <b>Spring is modular by design.</b></span></p>
                 <section class="cards">
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-boot-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-boot-icon"></div>
                         </div>
                         <div class="card__title"> Spring boot</div>
-                        <p class="card__description text">
+                        <p class="card__description">
                             Takes an opinionated view of building
                             Spring applications and gets you up and
                             running as quickly as possible.
@@ -81,8 +81,8 @@
 
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-framework-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-framework-icon"></div>
                         </div>
                         <div class="card__title"> Spring Framework</div>
                         <p class="card__description">Provides core support
@@ -91,8 +91,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-cloud-data-flow-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-cloud-data-flow-icon"></div>
                         </div>
                         <div class="card__title"> Spring Cloud Data Flow</div>
                         <p class="card__description">An orchestration service for
@@ -101,8 +101,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-cloud-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-cloud-icon"></div>
                         </div>
                         <div class="card__title"> Spring Cloud</div>
                         <p class="card__description">An orchestration service for
@@ -111,8 +111,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-data-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-data-icon"></div>
                         </div>
                         <div class="card__title"> Spring Data</div>
                         <p class="card__description">An orchestration service for
@@ -121,8 +121,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-integration-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-integration-icon"></div>
                         </div>
                         <div class="card__title"> Spring Integration</div>
                         <p class="card__description">An orchestration service for
@@ -131,8 +131,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-batch-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-batch-icon"></div>
                         </div>
                         <div class="card__title"> Spring Batch</div>
                         <p class="card__description">Simplifies and optimizes the work of processing high-volume batch
@@ -140,8 +140,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-security-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-security-icon"></div>
                         </div>
                         <div class="card__title">Spring Security</div>
                         <p class="card__description">Protects your application with comprehensive and extensible
@@ -149,8 +149,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-hateoas-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-hateoas-icon"></div>
                         </div>
                         <div class="card__title">Spring HATEOAS</div>
                         <p class="card__description">Simplifies creating REST representations that follow the HATEOAS
@@ -158,8 +158,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-rest-docs-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-rest-docs-icon"></div>
                         </div>
                         <div class="card__title">Spring REST Docs</div>
                         <p class="card__description">Document RESTful services by combining hand-written documentation
@@ -167,8 +167,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-amqp-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-amqp-icon"></div>
                         </div>
                         <div class="card__title">Spring AMQP</div>
                         <p class="card__description">Applies core Spring concepts to the development of AMQP-based
@@ -176,8 +176,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-mobile-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-mobile-icon"></div>
                         </div>
                         <div class="card__title">Spring Mobile</div>
                         <p class="card__description">Simplifies the development of mobile web apps through device
@@ -185,8 +185,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-for-android-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-for-android-icon"></div>
                         </div>
                         <div class="card__title"> Spring For Android</div>
                         <p class="card__description">Provides key Spring components for use in developing Android
@@ -194,8 +194,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-web-flow-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-web-flow-icon"></div>
                         </div>
                         <div class="card__title"> Spring Web Flow</div>
                         <p class="card__description">Supports building web applications with controlled navigation such
@@ -203,8 +203,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-web-services-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-web-services-icon"></div>
                         </div>
                         <div class="card__title"> Spring Web Services</div>
                         <p class="card__description">Facilitates the development of
@@ -212,8 +212,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-ldap-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-ldap-icon"></div>
                         </div>
                         <div class="card__title"> Spring LDAP</div>
                         <p class="card__description">Simplifies the development of applications using LDAP using
@@ -221,8 +221,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-session-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-session-icon"></div>
                         </div>
                         <div class="card__title"> Spring Session</div>
                         <p class="card__description">Spring Session provides an API and implementations for managing a
@@ -230,8 +230,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-shell-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-shell-icon"></div>
                         </div>
                         <div class="card__title"> Spring Shell</div>
                         <p class="card__description">Provides a powerful foundation for building command-line apps using
@@ -239,8 +239,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-flo-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-flo-icon"></div>
                         </div>
                         <div class="card__title"> Spring Flo</div>
                         <p class="card__description">A JavaScript library that offers a basic embeddable HTML5 visual
@@ -248,16 +248,16 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-kafka-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-kafka-icon"></div>
                         </div>
                         <div class="card__title"> Spring Kafka</div>
                         <p class="card__description">Provides Familiar Spring Abstractions for Apache Kafka.
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-statemachine-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-statemachine-icon"></div>
                         </div>
                         <div class="card__title">Spring Statemachine</div>
                         <p class="card__description">A framework for application developers to use state machine
@@ -265,8 +265,8 @@
                         </p>
                     </a>
                     <a class="card" href="#">
-                        <div class="card-icon-container">
-                            <div class="card-icon-sprite spring-io-platform-icon"></div>
+                        <div class="card__icon-container">
+                            <div class="card__icon-sprite spring-io-platform-icon"></div>
                         </div>
                         <div class="card__title">Spring IO Platform</div>
                         <p class="card__description">Provides a cohesive, versioned platform for building modern
@@ -275,14 +275,14 @@
                         </p>
                     </a>
                 </section>
-                <h2 class="main-content__title main-content__title_size_s">Community Projects</h2>
-                <section class="cards top-separator cards_separator_top cards_border_top">
-                    <a class="card card_height_s" href="#">
+                <h2 class="main-content__title main-content__title--size-s">Community Projects</h2>
+                <section class="cards  cards--separator-top cards--border-top">
+                    <a class="card card--height-s" href="#">
                         <div class="card__title">Spring Roo</div>
                         <p class="card__description">Makes it fast and easy to build full Java applications in minutes.
                         </p>
                     </a>
-                    <a class="card card_height_s" href="#">
+                    <a class="card card--height-s" href="#">
                         <div class="card__title">Spring Scala</div>
                         <p class="card__description">Brings the power and expressiveness of Scala together with the
                             productivity and deep ecosystem of Spring.
@@ -290,35 +290,35 @@
                     </a>
 
                 </section>
-                <h2 class="main-content__title main-content__title_size_s">Projects in the Attic</h2>
-                <section class="cards top-separator cards_separator_top cards_border_top">
-                    <a class="card card_height_s" href="#">
+                <h2 class="main-content__title main-content__title--size-s">Projects in the Attic</h2>
+                <section class="cards cards--separator-top cards--border-top">
+                    <a class="card card--height-s" href="#">
                         <div class="card__title"> Spring BlazeDS Integration</div>
                         <p class="card__description">An orchestration service for
                             composable data microservice
                             applications on modern runtimes.
                         </p>
                     </a>
-                    <a class="card card_height_s" href="#">
+                    <a class="card card--height-s" href="#">
                         <div class="card__title"> Spring Loaded</div>
                         <p class="card__description">Boosts development productivity by reloading class file changes—as
                             you make them—within your app's JVM.
                         </p>
                     </a>
-                    <a class="card card_height_s" href="#">
+                    <a class="card card--height-s" href="#">
                         <div class="card__title">REST Shell</div>
                         <p class="card__description">Makes writing and testing RESTful applications easier with
                             CLI-based
                             resource discovery and interaction.
                         </p>
                     </a>
-                    <a class="card card_height_s " href="#">
+                    <a class="card card--height-s " href="#">
                         <div class="card__title">Spring XD</div>
                         <p class="card__description">Simplifies the development of big data applications by addressing
                             ingestion, analytics, batch jobs and data export.
                         </p>
                     </a>
-                    <a class="card card_height_s " href="#">
+                    <a class="card card--height-s " href="#">
                         <div class="card__title">Spring Social</div>
                         <p class="card__description">Easily connects your applications with third-party APIs such as
                             Facebook, Twitter, LinkedIn, and more.
@@ -331,11 +331,11 @@
     <footer class="footer">
         <div class="container-wrap">
             <nav class="footer-menu">
-                <ul class="footer-menu__list footer-menu-list">
-                    <li class="footer-menu-list__item"><a href="#">Team</a></li>
-                    <li class="footer-menu-list__item"><a href="#">Tools</a></li>
-                    <li class="footer-menu-list__item"><a href="#">Store</a></li>
-                    <li class="footer-menu-list__item"><a href="#">Newsletter</a></li>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a href="#">Team</a></li>
+                    <li class="footer-menu__item"><a href="#">Tools</a></li>
+                    <li class="footer-menu__item"><a href="#">Store</a></li>
+                    <li class="footer-menu__item"><a href="#">Newsletter</a></li>
                 </ul>
             </nav>
             <div class="copyrights">
