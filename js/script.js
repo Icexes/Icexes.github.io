@@ -11,3 +11,9 @@ searchButton.addEventListener('click', function() {
     }
 }); 
 
+document.querySelector(".mobile-menu__button").addEventListener("click", function(event) {
+
+
+    document.querySelector(".navbar").classList.toggle("test")
+})
+
