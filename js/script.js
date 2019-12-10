@@ -12,7 +12,8 @@ searchButton.addEventListener('click', function() {
 }); 
 
 document.querySelector(".mobile-menu__button").addEventListener("click", function(event) {
-
+    
+    document.querySelector(".viewport").classList.toggle("constrained")
     document.querySelector(".mobile-menu").classList.toggle("mobile-menu__visible")
     document.querySelector(".mobile-menu__button").classList.toggle("mobile-menu__open")
     document.querySelector(".navbar__logo").classList.toggle("mobile-menu__open")

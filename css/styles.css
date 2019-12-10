@@ -7,14 +7,15 @@
     -webkit-text-stroke: 0.5px currentcolor;
 }
 
-body {
+
+.viewport {
+    overflow: hidden;
     margin: 0px;
     padding: 0px;
     background-color: #f1f1f1;
     font-family: varela round, sans-serif;
     font-size: 14px;
 }
-
 p {
     line-height: 24px;
     font-size: 16px;
@@ -488,7 +489,9 @@ p {
         color:  #34302d;
         font-size: 18px;
     }
-
+    .viewport.constrained {
+        overflow: hidden;
+    }
 
 
     
