@@ -152,8 +152,13 @@ p {
     display: none;
 }
 
+
+
+
+
+
 .mobile-menu__button {
-    margin-left: -30px;
+    display: none;
 }
 
 .mobile-menu__line {
@@ -436,21 +441,112 @@ p {
         transition: all .25s;
     }
 
+
+
+
     .mobile-menu {
         display: block;
+        position: absolute;
+        top: 0;
+        left: 0; 
+        transform: translateX(-200%);
+        transition: 0.2s;
+        
+        background-color: #34302d; 
+        width: 270px;
+        height:100%;
+
+
     }
+    .test {
+        transform: translateX(270px);   
+    }
+    .mobile-menu__visible {
+        position: fixed;
+        overflow: hidden;
+        transform: translateX(0%);
+    }
+    .mobile-menu__open {
+        
+        transform: translateX(270px);
+    }
+    .mobile-search-container {
+    margin: 15px;
+    padding: 5px;
+    background-color: #464340;
+    }
+    .mobile-search__field {
+        width: 90%;
+        height:20px;
+        padding: 0 10% 0 0;
+        background-color: transparent;
+        border:none;
+        color: #fff;
+    }
+
+    .mobile-search-form__search-icon {
+        color:  #34302d;
+        font-size: 18px;
+    }
+
+
+
+    
+    
+    ul.navigation-item-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    
+    }
+    
+    li.mobile-menu__navbar-link {
+        list-style: none;
+        
+        
+    }
+    
+    li.mobile-menu__navbar-link a {
+        display: block;
+        color: #f1f1f1;
+        text-decoration: none;
+        min-width:100%;
+        max-height:100%;
+        line-height: 15px;
+        border-bottom: 1px solid #474441;
+        padding: 15px;
+    }
+    
+    li.mobile-menu__navbar-link a i {
+        margin-right: 10px;
+    }
+   .mobile-search-form__submit {
+       position: absolute;
+       border:none;
+       background-color: transparent;
+       right:20px;
+       top:20px;
+       cursor: pointer;
+   }
+
+
+
+
+
+
+
 
     .mobile-menu__button {
         display: flex;
         border: none;
         background-color: transparent;
-        align-items: center;
         flex-direction: column;
         justify-content: center;
-        width: 70px;
+        transition: 0.2s;
     }
 
     .navbar__logo {
+        transition: 0.2s;
         margin: 0 auto;
     }
 
@@ -476,7 +572,3 @@ p {
 }
 
 
-.test {
-    transform: translateX(270px);
-    
-}

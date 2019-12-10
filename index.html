@@ -15,19 +15,37 @@
 </head>
 
 <body>
-    
+
     <header class="header">
         <div class="container-wrap">
             <div class="navbar">
-                <div class="mobile-menu">
+                    <div class="mobile-menu">
+                            <div class="mobile-search-container">
+                                    <form action="/search" class="form-inline form-search" method="get">
+                                        <button class="mobile-search-form__submit" type="submit"><i class="fas fa-search mobile-search-form__search-icon"></i></button>
+                                        <input class="mobile-search__field" name="q" placeholder="Search..." type="text" value="">
+                                        </form>
+                            </div>
+                            <ul class="navigation-item-list">
+                                    <li class="mobile-menu__navbar-link"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                                    <li class="mobile-menu__navbar-link"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Projects</a></li>
+                                    <li class="mobile-menu__navbar-link"><a href="#"><i class="fa fa-server" aria-hidden="true"></i>Guides</a></li>
+                                    <li class="mobile-menu__navbar-link"><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>Blog</a></li>
+                                    <li class="mobile-menu__navbar-link"><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Training & Certification</a></li>
+                                 </ul>
+                                </div>      
+                                 <button class="mobile-menu__button  button">
+                                        <span class="mobile-menu__line"></span>
+                                        <span class="mobile-menu__line"></span>
+                                        <span class="mobile-menu__line"></span>
+                                    </button>
+                                
+
+
                     
-                    <button class="mobile-menu__button  button">
-                        <span class="mobile-menu__line"></span>
-                        <span class="mobile-menu__line"></span>
-                        <span class="mobile-menu__line"></span>
-                    </button>
-                </div>
+                    
                 <div class="navbar__logo logo">
+
                     <a class="logo__img" href="#"></a>
                 </div>
                 <ul class="navbar-desktop-menu">
