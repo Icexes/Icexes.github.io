@@ -33,8 +33,13 @@ p {
     border-top: 5px solid #6db33f;
     background-color: #34302d;
 }
-
+.navbar-wrap {
+    top:0px;
+    position: relative;
+    z-index:44444;
+}
 .navbar {
+    
     display: flex;
     justify-content: space-between;
 }
@@ -99,7 +104,7 @@ p {
     transform: translateY(-200%);
     
     transition: 0.2s;
-    z-index: -1;
+    z-index: 100;
    
     
 }
@@ -112,7 +117,7 @@ p {
 */
 
 .search-form-container--show {
-    z-index: 1;
+   
     transform: translateY(0%);
     opacity: 1;
 
