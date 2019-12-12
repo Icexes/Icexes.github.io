@@ -29,9 +29,6 @@ p {
     margin: 0 auto;
 }
 
-.header {
-    
-}
 .navbar-wrap {
     border-top: 5px solid #6db33f;
     background-color: #34302d;
@@ -158,11 +155,6 @@ p {
 .mobile-menu {
     display: none;
 }
-
-
-
-
-
 
 .mobile-menu__button {
     display: none;
@@ -488,7 +480,7 @@ p {
     }
 
     .mobile-search-form__search-icon {
-        color:  #34302d;
+        color:  #807d7b;
         font-size: 18px;
     }
 
