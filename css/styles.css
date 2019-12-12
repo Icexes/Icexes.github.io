@@ -30,10 +30,11 @@ p {
 }
 
 .header {
-    border-top: 5px solid #6db33f;
-    background-color: #34302d;
+
 }
 .navbar-wrap {
+    border-top: 5px solid #6db33f;
+    background-color: #34302d;
     top:0px;
     position: relative;
     z-index:44444;
