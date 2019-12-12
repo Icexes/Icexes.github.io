@@ -8,8 +8,8 @@
 }
 
 
-.viewport {
-    overflow: hidden;
+body {
+    
     margin: 0px;
     padding: 0px;
     background-color: #f1f1f1;
@@ -446,10 +446,6 @@ p {
         align-items: center;
         transition: all .25s;
     }
-
-
-
-
     .mobile-menu {
         display: block;
         position: absolute;
@@ -494,7 +490,9 @@ p {
         color:  #34302d;
         font-size: 18px;
     }
-    .viewport.constrained {
+
+
+   .constrained {
         overflow: hidden;
     }
 
