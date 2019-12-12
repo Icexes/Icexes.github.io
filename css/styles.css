@@ -30,7 +30,7 @@ p {
 }
 
 .header {
-
+    
 }
 .navbar-wrap {
     border-top: 5px solid #6db33f;
@@ -438,7 +438,7 @@ p {
         display: none;
     }
 
-    .header {
+    .navbar-wrap  {
         border: none;
     }
 
