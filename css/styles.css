@@ -488,6 +488,7 @@ p {
 
    .constrained {
         overflow: hidden;
+        position: fixed;
     }
 
 
