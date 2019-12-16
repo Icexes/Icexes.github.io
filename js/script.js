@@ -8,8 +8,8 @@ searchButton.addEventListener('click', function () {
 document.addEventListener("click", function(event) {
     if (event.target.closest(".mobile-menu__button")) {
         toggle(".mobile-menu", "mobile-menu__visible")
-        toggle(".mobile-menu__button", "mobile-menu__open")
-        toggle(".navbar__logo", "mobile-menu__open")
+        toggle(".mobile-menu__button", "mobile-menu__opened")
+        toggle(".navbar__logo", "mobile-menu__opened")
         toggle("body", "constrained")
         return;
     }
@@ -19,8 +19,8 @@ document.addEventListener("click", function(event) {
         
     }
     toggle(".mobile-menu", "mobile-menu__visible")
-    toggle(".mobile-menu__button", "mobile-menu__open")
-    toggle(".navbar__logo", "mobile-menu__open")
+    toggle(".mobile-menu__button", "mobile-menu__opened")
+    toggle(".navbar__logo", "mobile-menu__opened")
     toggle("body", "constrained")
     }
 
