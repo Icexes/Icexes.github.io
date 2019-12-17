@@ -79,13 +79,22 @@ p {
 }
 
 .navbar-desktop-menu__item:last-child>.navbar-desktop-menu__link {
-    padding-top: 19px;
+    position:relative;
+    padding-top: 46px;
+    padding-right: 34px;
 }
 
 .navbar-desktop-menu__search-icon {
-    position: relative;
-    top: 8px;
-    bottom: 5px;
+    position: absolute;
+    left:14px;
+    top:25px;
+    font-size: 26px;
+}
+
+.navbar-desktop-menu__remove-icon {
+    position: absolute;
+    left:19px;
+    top:25px;
     font-size: 26px;
 }
 
@@ -107,12 +116,12 @@ p {
     
 }
 
-/*
-.fas.fa-search.navbar-desktop-menu__search-icon.js-search-input-open,
-.fas.fa-times.icon-remove.js-search-input-close {
+
+.fas.fa-search.navbar-desktop-menu__search-icon.js-search-input--opened,
+.fas.fa-times.icon-remove.js-search-input--closed {
     display: none;
 }
-*/
+
 
 .search-form-container--show {
    

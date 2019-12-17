@@ -1,9 +1,11 @@
-let searchButton = document.querySelector('.search-link');
+let searchLink = document.querySelector('.search-link');
 let searchFormContainer = document.querySelector('.search-form-container');
 
-searchButton.addEventListener('click', function () {
-    toggleClass(searchButton, 'search-link--clicked')
+searchLink.addEventListener('click', function () {
+    toggleClass(searchLink, 'search-link--clicked')
     toggleClass(searchFormContainer, 'search-form-container--show')
+    toggleClass(searchLink.querySelectorAll("i")[0] ,'js-search-input--opened')
+    toggleClass(searchLink.querySelectorAll("i")[1] ,'js-search-input--closed')
 });
 
 let mobileMenu = document.querySelector(".mobile-menu")
