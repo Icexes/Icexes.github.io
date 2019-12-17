@@ -458,12 +458,12 @@ p {
     .test {
         transform: translateX(270px);   
     }
-    .mobile-menu__visible {
+    .mobile-menu--visible {
         position: fixed;
         overflow: hidden;
         transform: translateX(0%);
     }
-    .mobile-menu__opened {
+    .js-slide--right {
         
         transform: translateX(270px);
     }
