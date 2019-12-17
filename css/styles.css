@@ -79,25 +79,19 @@ p {
 }
 
 .navbar-desktop-menu__item:last-child>.navbar-desktop-menu__link {
-    position:relative;
-    padding-top: 46px;
-    padding-right: 34px;
+    display:flex;
+    padding: 25px 20px;
+    width:60px;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.navbar-desktop-menu__search-icon {
-    text-align:center;
-    position: absolute;
-    left:14px;
-    top:25px;
-    font-size: 26px;
-}
-
+.navbar-desktop-menu__search-icon,
 .navbar-desktop-menu__remove-icon {
-    position: absolute;
-    left:19px;
-    top:25px;
-    font-size: 26px;
+    font-size: 24px;
 }
+
 
 .navbar-desktop-menu__link:hover,
 .navbar-desktop-menu__link_bg-color_green {
