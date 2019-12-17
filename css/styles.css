@@ -451,6 +451,7 @@ p {
         background-color: #34302d; 
         width: 270px;
         height:100%;
+        border-right: 1px solid #2b2825;
 
 
     }
@@ -511,15 +512,17 @@ p {
         display: block;
         color: #f1f1f1;
         text-decoration: none;
-        min-width:100%;
-        max-height:100%;
+
         line-height: 15px;
         border-bottom: 1px solid #474441;
         padding: 15px;
     }
     
     li.mobile-menu__navbar-link a i {
+        position: absolute;
+        right:20px;
         margin-right: 10px;
+        font-size: 20px;
     }
    .mobile-search-form__submit {
        position: absolute;
