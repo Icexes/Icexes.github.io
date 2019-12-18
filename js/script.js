@@ -44,3 +44,31 @@ function toggleClass(selector, className) {
     let findedSelector = typeof selector == 'object' ? selector : document.querySelector(selector);
     findedSelector.classList.toggle(className);
 }
+
+
+let cardsArray = [
+    {
+        title: "faafs",
+        description: "",
+        url : "",    
+    }
+];
+
+const cteateCard = (array) => {
+    for (let card of array) {
+        let 
+    }
+}
+
+const makeElement = (tagName,className, text) => {
+    let element = document.createElement(tagName);
+    if (className) {
+        element.classList.add(className);
+    }
+    if (text) {
+        element.textContent = text;
+    }
+    }
+
+
+
