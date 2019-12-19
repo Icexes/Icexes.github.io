@@ -233,22 +233,11 @@ p {
 }
 
 .card__icon-container {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 135px;
-}
-
-.card__icon-sprite {
-    background: url("../img/iconsprite.png") no-repeat; 
-    margin: 0 auto;
-}
-.card__icon-sprite-test {
-   /* display:block;
-    max-width: 100%;
-    height: auto; */
-
-   /* margin: 0 auto; */
 }
 
 .spring-boot-icon {
