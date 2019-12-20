@@ -197,3 +197,58 @@ cardsArray.forEach( (item) => {
    cards.append(card)
 }
 )
+let childs = Array.from(cards.children);
+
+
+
+
+// фильтр карточек
+let searchInputContainer = document.querySelector(".form-search__input")
+searchInputContainer.addEventListener("input", function(event) {
+    let textInput = this.value.trim(); //???
+
+    if (textInput !=="") {
+
+        childs.forEach((elem) => {
+
+            if (elem.querySelector(".card__description").innerText.search(textInput) == -1 || elem.querySelector(".card__title").innerText.search(textInput) == -1) {
+                elem.classList.add("hidden")
+            }
+            else {
+                elem.classList.remove("hidden")
+            }
+
+
+
+
+        }     )
+
+    }
+    else {
+
+        childs.forEach((elem) => {
+                elem.classList.remove("hidden")
+            }
+
+
+
+
+             )
+
+const addMark = () => {
+
+
+
+
+}
+
+
+
+    }
+
+
+
+})
+const filterCards = () => {
+
+}
