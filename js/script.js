@@ -70,7 +70,7 @@ const createCard = (obj) => {
     let cardIcon = makeElement("img")
     cardIcon.src = obj.src
     cardIconContainer.append(cardIcon)
-    let cardTitle = makeElement("div", "card__title")
+    let cardTitle = makeElement("p", "card__title")
     cardTitle.textContent = obj.title
     card.append(cardTitle)
     let cardDescription = makeElement("p", "card__description")
@@ -199,56 +199,77 @@ cardsArray.forEach( (item) => {
 )
 let childs = Array.from(cards.children);
 
-
-
-
 // фильтр карточек
 let searchInputContainer = document.querySelector(".form-search__input")
-searchInputContainer.addEventListener("input", function(event) {
-    let textInput = this.value.trim(); //???
+searchInputContainer.addEventListener("input", function() {
+    let textInput = this.value; //???
 
     if (textInput !=="") {
+        childs.forEach((card) => {
+            let counter = 0
+            let paragraphs = card.querySelectorAll("p")
 
-        childs.forEach((elem) => {
-
-            if (elem.querySelector(".card__description").innerText.search(textInput) == -1 || elem.querySelector(".card__title").innerText.search(textInput) == -1) {
-                elem.classList.add("hidden")
+            paragraphs.forEach((elem) => {
+                if (elem.innerText.toLowerCase().search(textInput.toLowerCase()) !== -1) {
+                    counter++
+                    elem.innerHTML = addMark(elem.innerText, elem.innerText.toLowerCase().search(textInput.toLowerCase()), textInput.length )
+                    //addMark()
+                }
+                else {
+                    elem.innerHTML = elem.innerText
+                }
+            })
+            if (counter) {
+                card.classList.remove("hidden");
             }
             else {
-                elem.classList.remove("hidden")
+                card.classList.add("hidden");
             }
-
-
-
-
-        }     )
-
+        })
     }
     else {
+        childs.forEach((card) => {
+            card.classList.remove("hidden")  
+            let paragraphs = card.querySelectorAll("p")
 
-        childs.forEach((elem) => {
-                elem.classList.remove("hidden")
-            }
-
-
-
-
-             )
-
-const addMark = () => {
-
-
-
-
+            paragraphs.forEach((elem) => {
+                elem.innerHTML = elem.innerText
+            })
+    })
 }
-
-
-
-    }
-
-
-
 })
-const filterCards = () => {
 
-}
+
+const addMark = (str, pos, length) => str.slice(0,pos) + '<mark>' + str.slice(pos,pos +length) + '</mark>' + str.slice(pos +length);
+
+// let searchInputContainer = document.querySelector(".form-search__input")
+// searchInputContainer.addEventListener("input", function(event) {
+//     let textInput = this.value.trim(); //???
+
+//     if (textInput !=="") {
+//         childs.forEach((elem) => {
+
+
+
+            
+
+//             if (elem.querySelector(".card__description").innerText.search(textInput) == -1) {
+//                 elem.classList.add("hidden")
+//             }
+//             else {
+
+//                 elem.classList.remove("hidden")
+//             }
+
+//         }     )
+
+//     }
+//     else {
+
+//         childs.forEach((elem) => {
+//                 elem.classList.remove("hidden")
+//                 elem.innerHTML = addMark(elem.innerT,)
+//             }
+//              )
+//     }
+// })
