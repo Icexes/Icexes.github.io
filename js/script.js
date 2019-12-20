@@ -202,7 +202,7 @@ let childs = Array.from(cards.children);
 // фильтр карточек
 let searchInputContainer = document.querySelector(".form-search__input")
 searchInputContainer.addEventListener("input", function() {
-    let textInput = this.value; //???
+    let textInput = this.value; 
 
     if (textInput !=="") {
         childs.forEach((card) => {
@@ -213,7 +213,6 @@ searchInputContainer.addEventListener("input", function() {
                 if (elem.innerText.toLowerCase().search(textInput.toLowerCase()) !== -1) {
                     counter++
                     elem.innerHTML = addMark(elem.innerText, elem.innerText.toLowerCase().search(textInput.toLowerCase()), textInput.length )
-                    //addMark()
                 }
                 else {
                     elem.innerHTML = elem.innerText
