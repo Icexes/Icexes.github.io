@@ -64,7 +64,7 @@ const makeElement = (tagName, className, text) => {
 
 const createCard = (obj) => {
     let card = makeElement("a", "card")
-    card.href="#"
+    card.href = "#"
     let cardIconContainer = makeElement("div", "card__icon-container")
     card.append(cardIconContainer)
     let cardIcon = makeElement("img")
@@ -76,7 +76,7 @@ const createCard = (obj) => {
     let cardDescription = makeElement("p", "card__description")
     cardDescription.textContent = obj.description
     card.append(cardDescription)
-    return card; 
+    return card;
 }
 
 let cardsArray = [{
@@ -182,7 +182,7 @@ let cardsArray = [{
     {
         src: "img/icons/spring-statemachine.png",
         title: "Spring Statemachine",
-        description: "A framework for application developers to use state machine concepts with Spring applications " 
+        description: "A framework for application developers to use state machine concepts with Spring applications "
     },
     {
         src: "img/icons/spring-io-platform.png",
@@ -192,19 +192,18 @@ let cardsArray = [{
 ]
 
 let cards = document.querySelector(".cards")
-cardsArray.forEach( (item) => {
-   let card = createCard(item)
-   cards.append(card)
-}
-)
+cardsArray.forEach((item) => {
+    let card = createCard(item)
+    cards.append(card)
+})
 let childs = Array.from(cards.children);
 
 // фильтр карточек
 let searchInputContainer = document.querySelector(".form-search__input")
-searchInputContainer.addEventListener("input", function() {
-    let textInput = this.value; 
+searchInputContainer.addEventListener("input", function () {
+    let textInput = this.value;
 
-    if (textInput !=="") {
+    if (textInput !== "") {
         childs.forEach((card) => {
             let counter = 0
             let paragraphs = card.querySelectorAll("p")
@@ -212,34 +211,31 @@ searchInputContainer.addEventListener("input", function() {
             paragraphs.forEach((elem) => {
                 if (elem.innerText.toLowerCase().search(textInput.toLowerCase()) !== -1) {
                     counter++
-                    elem.innerHTML = addMark(elem.innerText, elem.innerText.toLowerCase().search(textInput.toLowerCase()), textInput.length )
-                }
-                else {
+                    elem.innerHTML = addMark(elem.innerText, elem.innerText.toLowerCase().search(textInput.toLowerCase()), textInput.length)
+                } else {
                     elem.innerHTML = elem.innerText
                 }
             })
             if (counter) {
                 card.classList.remove("hidden");
-            }
-            else {
+            } else {
                 card.classList.add("hidden");
             }
         })
-    }
-    else {
+    } else {
         childs.forEach((card) => {
-            card.classList.remove("hidden")  
+            card.classList.remove("hidden")
             let paragraphs = card.querySelectorAll("p")
 
             paragraphs.forEach((elem) => {
                 elem.innerHTML = elem.innerText
             })
-    })
-}
+        })
+    }
 })
 
 
-const addMark = (str, pos, length) => str.slice(0,pos) + '<mark>' + str.slice(pos,pos +length) + '</mark>' + str.slice(pos +length);
+const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
 
 // let searchInputContainer = document.querySelector(".form-search__input")
 // searchInputContainer.addEventListener("input", function(event) {
@@ -250,7 +246,7 @@ const addMark = (str, pos, length) => str.slice(0,pos) + '<mark>' + str.slice(po
 
 
 
-            
+
 
 //             if (elem.querySelector(".card__description").innerText.search(textInput) == -1) {
 //                 elem.classList.add("hidden")
