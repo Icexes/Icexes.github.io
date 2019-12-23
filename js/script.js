@@ -206,7 +206,7 @@ let searchInputContainer = document.querySelector(".form-search__input")
 let notFoundContainer = makeElement("div", ["not-found-container", "hidden"])
 notFoundContainer.textContent = "NOT FOUND"
 cards.append(notFoundContainer)
-searchInputContainer.addEventListener("input", function () {
+function fc() {
     let textInput = this.value;
 
     if (textInput !== "") {
@@ -246,7 +246,10 @@ searchInputContainer.addEventListener("input", function () {
         notFoundContainer.classList.add("hidden")
     }
 
-})
+
+
+}
+searchInputContainer.addEventListener("input", fc.bind(this))
 
 
 const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
