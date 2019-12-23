@@ -10,7 +10,7 @@ searchLink.addEventListener('click', function () {
 
 let mobileMenu = document.querySelector(".mobile-menu")
 let mobileMenuButton = document.querySelector(".mobile-menu__button")
-
+////????????????????????????????????
 document.addEventListener("click", function (event) {
     if (event.target.closest(".mobile-menu__button")) {
         toggleClass(mobileMenu, "mobile-menu--visible")
@@ -201,7 +201,6 @@ cardsDataArray.forEach((item) => {
 let cardsList = Array.from(cards.children);
 
 // фильтр карточек
-let searchInputContainer = document.querySelector(".search-field--js")
 let searchFieldsArray = document.querySelectorAll(".search-field--js")
 for (let searchField of searchFieldsArray) {
     searchField.addEventListener("input", filterCards)
@@ -230,7 +229,6 @@ function filterCards() {
                 removeClass(card, "hidden")
             } else {
                 addClass(card, "hidden")
-
             }
         })
         if (!cards.querySelectorAll("a.card:not(.hidden)").length) {
@@ -245,7 +243,6 @@ function filterCards() {
         cardsList.forEach((card) => {
             removeClass(card, "hidden")
             let paragraphs = card.querySelectorAll("p")
-
             paragraphs.forEach((elem) => {
                 elem.innerHTML = elem.innerText
             })
