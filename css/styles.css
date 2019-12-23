@@ -580,3 +580,9 @@ p {
 .hidden {
     display:none;
 }
+
+.not-found-container {
+    font-size: 46px;
+    font-style: italic;
+    margin-bottom: 50px;
+}

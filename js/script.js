@@ -50,15 +50,19 @@ function toggleClass(selector, className) {
 
 //Создание карточек на главной странице
 
-const makeElement = (tagName, className, text) => {
-
+const makeElement = (tagName, classNames) => {
+    console.log(typeof classNames)
     let element = document.createElement(tagName)
-    if (className) {
-        element.classList.add(className)
+    
+    if (typeof classNames == "string") {
+        element.classList.add(classNames)
     }
-    if (text) {
-        element.textContent = text
+    else if (typeof classNames == "object") {
+        for (let className of classNames) {
+            element.classList.add(className)
+        }
     }
+    
     return element
 }
 
@@ -196,15 +200,18 @@ cardsArray.forEach((item) => {
     let card = createCard(item)
     cards.append(card)
 })
-let childs = Array.from(cards.children);
+let cardsList = Array.from(cards.children);
 
 // фильтр карточек
 let searchInputContainer = document.querySelector(".form-search__input")
+let notFoundContainer = makeElement("div", ["not-found-container","hidden"])
+           notFoundContainer.textContent = "NOT FOUND"
+           cards.append(notFoundContainer)
 searchInputContainer.addEventListener("input", function () {
     let textInput = this.value;
 
     if (textInput !== "") {
-        childs.forEach((card) => {
+        cardsList.forEach((card) => {
             let counter = 0
             let paragraphs = card.querySelectorAll("p")
 
@@ -222,8 +229,16 @@ searchInputContainer.addEventListener("input", function () {
                 card.classList.add("hidden");
             }
         })
+       if (!cards.querySelectorAll("a.card:not(.hidden)").length) {
+        notFoundContainer.classList.remove("hidden")
+       }
+       else
+       {
+        notFoundContainer.classList.add("hidden")
+       }
+
     } else {
-        childs.forEach((card) => {
+        cardsList.forEach((card) => {
             card.classList.remove("hidden")
             let paragraphs = card.querySelectorAll("p")
 
@@ -231,7 +246,9 @@ searchInputContainer.addEventListener("input", function () {
                 elem.innerHTML = elem.innerText
             })
         })
+        notFoundContainer.classList.add("hidden")
     }
+    
 })
 
 
@@ -242,7 +259,7 @@ const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(p
 //     let textInput = this.value.trim(); //???
 
 //     if (textInput !=="") {
-//         childs.forEach((elem) => {
+//         cardsList.forEach((elem) => {
 
 
 
@@ -261,7 +278,7 @@ const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(p
 //     }
 //     else {
 
-//         childs.forEach((elem) => {
+//         cardsList.forEach((elem) => {
 //                 elem.classList.remove("hidden")
 //                 elem.innerHTML = addMark(elem.innerT,)
 //             }
