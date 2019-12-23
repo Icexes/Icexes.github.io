@@ -9,13 +9,14 @@
 
 
 body {
-    
+
     margin: 0px;
     padding: 0px;
     background-color: #f1f1f1;
     font-family: varela round, sans-serif;
     font-size: 14px;
 }
+
 p {
     line-height: 24px;
     font-size: 16px;
@@ -32,12 +33,13 @@ p {
 .navbar-wrap {
     border-top: 5px solid #6db33f;
     background-color: #34302d;
-    top:0px;
+    top: 0px;
     position: relative;
-    z-index:100;
+    z-index: 100;
 }
+
 .navbar {
-    
+
     display: flex;
     justify-content: space-between;
 }
@@ -82,10 +84,10 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:0px;
+    padding: 0px;
     height: 100%;
-    width:60px;
-    
+    width: 60px;
+
 }
 
 .navbar-desktop-menu__search-icon,
@@ -105,11 +107,11 @@ p {
     width: 100%;
     background-color: #fff;
     transform: translateY(-200%);
-    
+
     transition: 0.2s;
     z-index: 99;
-   
-    
+
+
 }
 
 
@@ -120,7 +122,7 @@ p {
 
 
 .search-form-container--show {
-   
+
     transform: translateY(0%);
     opacity: 1;
 
@@ -209,7 +211,8 @@ p {
 }
 
 .card {
-    display: flex; /*????????????????????????*/
+    display: flex;
+    /*????????????????????????*/
     flex-direction: column;
     text-decoration: none;
     flex-grow: 1;
@@ -238,138 +241,6 @@ p {
     align-items: center;
     justify-content: center;
     height: 135px;
-}
-
-.spring-boot-icon {
-    width: 102px;
-    height: 90px;
-    background-position: -858px -363px;
-}
-
-.spring-framework-icon {
-    width: 135px;
-    height: 133px;
-    background-position: -483px -363px;
-}
-
-.spring-cloud-data-flow-icon {
-    width: 130px;
-    height: 105px;
-    background-position: -333px -133px;
-}
-
-.spring-cloud-icon {
-    width: 150px;
-    height: 111px;
-    background-position: -748px -245px;
-}
-
-.spring-data-icon {
-    width: 111px;
-    height: 111px;
-    background-position: -483px -688px;
-}
-
-.spring-integration-icon {
-    width: 145px;
-    height: 104px;
-    background-position: -640px -523px;
-}
-
-.spring-batch-icon {
-    width: 104px;
-    height: 108px;
-    background-position: -640px -363px;
-}
-
-.spring-security-icon {
-    width: 99px;
-    height: 137px;
-    background-position: -483px -523px;
-}
-
-.spring-hateoas-icon {
-    width: 126px;
-    height: 99px;
-    background-position: -483px -943px;
-}
-
-.spring-rest-docs-icon {
-    width: 168px;
-    height: 123px;
-    background-position: -100px -5px;
-}
-
-.spring-amqp-icon {
-    width: 109px;
-    height: 98px;
-    background-position: -640px -685px;
-}
-
-.spring-mobile-icon {
-    width: 104px;
-    height: 137px;
-    background-position: -804px -523px;
-}
-
-.spring-for-android-icon {
-    width: 106px;
-    height: 126px;
-    background-position: -805px -693px;
-}
-
-.spring-web-flow-icon {
-    width: 99px;
-    height: 99px;
-    background-position: -383px -944px;
-}
-
-.spring-web-services-icon {
-    width: 100px;
-    height: 100px;
-    background-position: bottom -55px right -432px;
-}
-
-.spring-ldap-icon {
-    width: 93px;
-    height: 105px;
-    background-position: top -140px right -132px;
-}
-
-.spring-session-icon {
-    width: 120px;
-    height: 125px;
-    background-position: top -125px right -400px;
-}
-
-.spring-shell-icon {
-    width: 135px;
-    height: 95px;
-    background-position: top -140px right -237px;
-}
-
-.spring-flo-icon {
-    width: 135px;
-    height: 111px;
-    background-position: top -140px right 0px;
-}
-
-.spring-kafka-icon {
-    width: 130px;
-    height: 116px;
-    background-position: top -130px left -184px;
-}
-
-.spring-statemachine-icon {
-    width: 105px;
-    height: 125px;
-    background-position: 0px 0px;
-}
-
-.spring-io-platform-icon {
-    width: 116px;
-    height: 105px;
-    background-position: -337px -243px;
 }
 
 .card__title {
@@ -432,7 +303,7 @@ p {
         display: none;
     }
 
-    .navbar-wrap  {
+    .navbar-wrap {
         border: none;
     }
 
@@ -441,74 +312,80 @@ p {
         align-items: center;
         transition: all .25s;
     }
+
     .mobile-menu {
         display: block;
         position: absolute;
         top: 0;
-        left: 0; 
+        left: 0;
         transform: translateX(-200%);
         transition: 0.2s;
-        
-        background-color: #34302d; 
+
+        background-color: #34302d;
         width: 270px;
-        height:100%;
+        height: 100%;
         border-right: 1px solid #2b2825;
 
 
     }
+
     .test {
-        transform: translateX(270px);   
+        transform: translateX(270px);
     }
+
     .mobile-menu--visible {
         position: fixed;
         overflow: hidden;
         transform: translateX(0%);
     }
+
     .js-slide--right {
-        
+
         transform: translateX(270px);
     }
+
     .mobile-search-container {
-    margin: 15px;
-    padding: 5px;
-    background-color: #464340;
+        margin: 15px;
+        padding: 5px;
+        background-color: #464340;
     }
+
     .mobile-search__input {
         width: 90%;
-        height:20px;
+        height: 20px;
         padding: 0 10% 0 0;
         background-color: transparent;
-        border:none;
+        border: none;
         color: #fff;
     }
 
     .mobile-search-form__search-icon {
-        color:  #807d7b;
+        color: #807d7b;
         font-size: 18px;
     }
 
 
-   .constrained {
+    .constrained {
         overflow: hidden;
         position: fixed;
     }
 
 
-    
-    
+
+
     ul.navigation-item-list {
         display: flex;
         flex-direction: column;
         padding: 0;
-    
+
     }
-    
+
     li.mobile-menu__navbar-link {
         list-style: none;
-        
-        
+
+
     }
-    
+
     li.mobile-menu__navbar-link a {
         display: block;
         color: #f1f1f1;
@@ -518,21 +395,22 @@ p {
         border-bottom: 1px solid #474441;
         padding: 15px;
     }
-    
+
     li.mobile-menu__navbar-link a i {
         position: absolute;
-        right:20px;
+        right: 20px;
         margin-right: 10px;
         font-size: 20px;
     }
-   .mobile-search-form__submit {
-       position: absolute;
-       border:none;
-       background-color: transparent;
-       right:20px;
-       top:20px;
-       cursor: pointer;
-   }
+
+    .mobile-search-form__submit {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
 
 
 
@@ -561,6 +439,7 @@ p {
         background-position: 0px -30px;
         background-size: 140%;
     }
+
     .logo__img:hover {
         background-position: 0 -30px;
     }
@@ -578,7 +457,7 @@ p {
 
 
 .hidden {
-    display:none;
+    display: none;
 }
 
 .not-found-container {
