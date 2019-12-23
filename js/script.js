@@ -51,7 +51,6 @@ function toggleClass(selector, className) {
 //Создание карточек на главной странице
 
 const makeElement = (tagName, classNames) => {
-    console.log(typeof classNames)
     let element = document.createElement(tagName)
 
     if (typeof classNames == "string") {
@@ -207,7 +206,7 @@ let notFoundContainer = makeElement("div", ["not-found-container", "hidden"])
 notFoundContainer.textContent = "NOT FOUND"
 cards.append(notFoundContainer)
 function fc() {
-    let textInput = this.value;
+    let textInput = event.target.value;
 
     if (textInput !== "") {
         cardsList.forEach((card) => {
@@ -249,7 +248,7 @@ function fc() {
 
 
 }
-searchInputContainer.addEventListener("input", fc.bind(this))
+searchInputContainer.addEventListener("input", fc)
 
 
 const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
