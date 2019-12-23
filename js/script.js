@@ -201,11 +201,15 @@ cardsArray.forEach((item) => {
 let cardsList = Array.from(cards.children);
 
 // фильтр карточек
-let searchInputContainer = document.querySelector(".form-search__input")
+let searchInputContainer = document.querySelector(".search-field--js")
+let test = document.querySelectorAll(".search-field--js")
+for (let searchField of test) {
+    searchField.addEventListener("input", filterCards)
+}
 let notFoundContainer = makeElement("div", ["not-found-container", "hidden"])
 notFoundContainer.textContent = "NOT FOUND"
 cards.append(notFoundContainer)
-function fc() {
+function filterCards() {
     let textInput = event.target.value;
 
     if (textInput !== "") {
@@ -245,11 +249,7 @@ function fc() {
         notFoundContainer.classList.add("hidden")
     }
 
-
-
 }
-searchInputContainer.addEventListener("input", fc)
-
 
 const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
 
