@@ -48,7 +48,7 @@ function toggleClass(selector, className) {
 }
 
 
-//Создание карточек на главной странице
+//Creating cards on main paige
 
 const makeElement = (tagName, classNames) => {
     let element = document.createElement(tagName)
@@ -200,7 +200,7 @@ cardsDataArray.forEach((item) => {
 })
 let cardsList = Array.from(cards.children);
 
-// фильтр карточек
+// filter for cards
 let searchFieldsArray = document.querySelectorAll(".search-field--js")
 for (let searchField of searchFieldsArray) {
     searchField.addEventListener("input", filterCards)
@@ -210,7 +210,7 @@ notFoundContainer.textContent = "NOT FOUND"
 cards.append(notFoundContainer)
 
 function filterCards() {
-    let textInput = event.target.value;
+    let textInput = event.target.value.trim();
 
     if (textInput !== "") {
         cardsList.forEach((card) => {
