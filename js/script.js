@@ -10,7 +10,7 @@ searchLink.addEventListener('click', function () {
 
 let mobileMenu = document.querySelector(".mobile-menu")
 let mobileMenuButton = document.querySelector(".mobile-menu__button")
-
+////????????????????????????????????
 document.addEventListener("click", function (event) {
     if (event.target.closest(".mobile-menu__button")) {
         toggleClass(mobileMenu, "mobile-menu--visible")
@@ -51,7 +51,6 @@ function toggleClass(selector, className) {
 //Создание карточек на главной странице
 
 const makeElement = (tagName, classNames) => {
-    console.log(typeof classNames)
     let element = document.createElement(tagName)
 
     if (typeof classNames == "string") {
@@ -82,7 +81,7 @@ const createCard = (obj) => {
     return card;
 }
 
-let cardsArray = [{
+let cardsDataArray = [{
         src: "img/icons/spring-boot.png",
         title: "Spring boot",
         description: "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible."
@@ -130,7 +129,7 @@ let cardsArray = [{
     {
         src: "img/icons/spring-rest-docs.png",
         title: "Spring Rest Docs",
-        description: "Document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC Test or REST Assured."
+        description: "Document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC searchFieldsArray or REST Assured."
     },
     {
         src: "img/icons/spring-amqp.png",
@@ -195,19 +194,23 @@ let cardsArray = [{
 ]
 
 let cards = document.querySelector(".cards")
-cardsArray.forEach((item) => {
+cardsDataArray.forEach((item) => {
     let card = createCard(item)
     cards.append(card)
 })
 let cardsList = Array.from(cards.children);
 
 // фильтр карточек
-let searchInputContainer = document.querySelector(".form-search__input")
+let searchFieldsArray = document.querySelectorAll(".search-field--js")
+for (let searchField of searchFieldsArray) {
+    searchField.addEventListener("input", filterCards)
+}
 let notFoundContainer = makeElement("div", ["not-found-container", "hidden"])
 notFoundContainer.textContent = "NOT FOUND"
 cards.append(notFoundContainer)
-searchInputContainer.addEventListener("input", function () {
-    let textInput = this.value;
+
+function filterCards() {
+    let textInput = event.target.value;
 
     if (textInput !== "") {
         cardsList.forEach((card) => {
@@ -223,62 +226,31 @@ searchInputContainer.addEventListener("input", function () {
                 }
             })
             if (counter) {
-                card.classList.remove("hidden");
+                removeClass(card, "hidden")
             } else {
-                card.classList.add("hidden");
+                addClass(card, "hidden")
             }
         })
         if (!cards.querySelectorAll("a.card:not(.hidden)").length) {
-            notFoundContainer.classList.remove("hidden")
+
+            removeClass(notFoundContainer, "hidden")
         } else {
-            notFoundContainer.classList.add("hidden")
+            addClass(notFoundContainer, "hidden")
+
         }
 
     } else {
         cardsList.forEach((card) => {
-            card.classList.remove("hidden")
+            removeClass(card, "hidden")
             let paragraphs = card.querySelectorAll("p")
-
             paragraphs.forEach((elem) => {
                 elem.innerHTML = elem.innerText
             })
         })
-        notFoundContainer.classList.add("hidden")
+        addClass(notFoundContainer, "hidden")
+
     }
 
-})
-
+}
 
 const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
-
-// let searchInputContainer = document.querySelector(".form-search__input")
-// searchInputContainer.addEventListener("input", function(event) {
-//     let textInput = this.value.trim(); //???
-
-//     if (textInput !=="") {
-//         cardsList.forEach((elem) => {
-
-
-
-
-
-//             if (elem.querySelector(".card__description").innerText.search(textInput) == -1) {
-//                 elem.classList.add("hidden")
-//             }
-//             else {
-
-//                 elem.classList.remove("hidden")
-//             }
-
-//         }     )
-
-//     }
-//     else {
-
-//         cardsList.forEach((elem) => {
-//                 elem.classList.remove("hidden")
-//                 elem.innerHTML = addMark(elem.innerT,)
-//             }
-//              )
-//     }
-// })
