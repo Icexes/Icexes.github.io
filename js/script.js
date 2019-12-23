@@ -53,16 +53,15 @@ function toggleClass(selector, className) {
 const makeElement = (tagName, classNames) => {
     console.log(typeof classNames)
     let element = document.createElement(tagName)
-    
+
     if (typeof classNames == "string") {
         element.classList.add(classNames)
-    }
-    else if (typeof classNames == "object") {
+    } else if (typeof classNames == "object") {
         for (let className of classNames) {
             element.classList.add(className)
         }
     }
-    
+
     return element
 }
 
@@ -204,9 +203,9 @@ let cardsList = Array.from(cards.children);
 
 // фильтр карточек
 let searchInputContainer = document.querySelector(".form-search__input")
-let notFoundContainer = makeElement("div", ["not-found-container","hidden"])
-           notFoundContainer.textContent = "NOT FOUND"
-           cards.append(notFoundContainer)
+let notFoundContainer = makeElement("div", ["not-found-container", "hidden"])
+notFoundContainer.textContent = "NOT FOUND"
+cards.append(notFoundContainer)
 searchInputContainer.addEventListener("input", function () {
     let textInput = this.value;
 
@@ -229,13 +228,11 @@ searchInputContainer.addEventListener("input", function () {
                 card.classList.add("hidden");
             }
         })
-       if (!cards.querySelectorAll("a.card:not(.hidden)").length) {
-        notFoundContainer.classList.remove("hidden")
-       }
-       else
-       {
-        notFoundContainer.classList.add("hidden")
-       }
+        if (!cards.querySelectorAll("a.card:not(.hidden)").length) {
+            notFoundContainer.classList.remove("hidden")
+        } else {
+            notFoundContainer.classList.add("hidden")
+        }
 
     } else {
         cardsList.forEach((card) => {
@@ -248,7 +245,7 @@ searchInputContainer.addEventListener("input", function () {
         })
         notFoundContainer.classList.add("hidden")
     }
-    
+
 })
 
 
