@@ -81,7 +81,7 @@ const createCard = (obj) => {
     return card;
 }
 
-let cardsArray = [{
+let cardsDataArray = [{
         src: "img/icons/spring-boot.png",
         title: "Spring boot",
         description: "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible."
@@ -194,7 +194,7 @@ let cardsArray = [{
 ]
 
 let cards = document.querySelector(".cards")
-cardsArray.forEach((item) => {
+cardsDataArray.forEach((item) => {
     let card = createCard(item)
     cards.append(card)
 })
