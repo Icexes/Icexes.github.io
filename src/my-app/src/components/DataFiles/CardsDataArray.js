@@ -1,4 +1,4 @@
-export const cardsDataArray = [{
+export const mainProjectCardsDataArray = [{
     src: "img/icons/spring-boot.png",
     title: "Spring boot",
     description: "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible."
@@ -108,4 +108,29 @@ export const cardsDataArray = [{
     title: "Spring Io Platform",
     description: "Provides a cohesive, versioned platform for building modernapplications. It is a modular, enterprise-grade distribution that delivers a curated set of dependencies."
 }
+]
+export const communityProjectsDataArray = [
+    {
+        title: "Spring Roo",
+        description: "Makes it fast and easy to build full Java applications in minutes."
+    },
+    {
+        title: "Spring Scala",
+        description: "Brings the power and expressiveness of Scala together with the productivity and deep ecosystem of Spring."
+    },
+]
+
+export const projectInTheAtticDataArray = [
+    {
+        title: "REST Shell",
+        description: "Makes writing and testing RESTful applications easier with CLI-based resource discovery and interaction."
+    },
+    {
+        title: "Spring XD",
+        description: "Simplifies the development of big data applications by addressing ingestion, analytics, batch jobs and data export."
+    },
+    {
+        title: "Spring Social",
+        description: "Easily connects your applications with third-party APIs such as Facebook, Twitter, LinkedIn, and more."
+    },
 ]
