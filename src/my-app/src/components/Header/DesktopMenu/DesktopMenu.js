@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuLinksData from "../DataFiles/MenuLinksData"
+import MenuLinksData from "../../DataFiles/MenuLinksData"
 
 export default function DesktopMenu() {
 
