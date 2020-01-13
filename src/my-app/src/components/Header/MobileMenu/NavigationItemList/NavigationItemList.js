@@ -1,6 +1,6 @@
 import React from 'react'
 export default function NavigationItemList() {
-    const itemList = [
+    const itemListData = [
         {
             href: "#",
             value: "Home"
@@ -23,18 +23,17 @@ export default function NavigationItemList() {
             value: "Training & Certification"
         }
     ]
-    const createLink = (obj) => {
+    const itemList = itemListData.map((element) =>
         <li className="mobile-menu__navbar-link">
-            <a href={obj.href}>{obj.value}
+            <a href={element.href}>{element.value}
                 <i className="fa fa-angle-right"></i></a>
         </li>
-    }
-    return (
-        <div className="mobile-menu">
-            <div className="container-wrap">
-                <MobileSearchField />
 
-            </div>
-        </div>
+    )
+
+    return (
+        <ul className="navigation-item-list">
+            {itemList}
+        </ul>
     )
 }
