@@ -9,12 +9,12 @@ searchLink.addEventListener('click', function () {
 });
 
 let mobileMenu = document.querySelector(".mobile-menu")
-let mobileMenuButton = document.querySelector(".mobile-menu__button")
+let burgerButton = document.querySelector(".burger-button")
 ////????????????????????????????????
 document.addEventListener("click", function (event) {
-    if (event.target.closest(".mobile-menu__button")) {
+    if (event.target.closest(".burger-button")) {
         toggleClass(mobileMenu, "mobile-menu--visible")
-        toggleClass(mobileMenuButton, "js-slide--right")
+        toggleClass(burgerButton, "js-slide--right")
         toggleClass(".navbar__logo", "js-slide--right")
         toggleClass("body", "constrained")
         return;
@@ -25,7 +25,7 @@ document.addEventListener("click", function (event) {
 
         }
         removeClass(mobileMenu, "mobile-menu--visible")
-        removeClass(mobileMenuButton, "js-slide--right")
+        removeClass(burgerButton, "js-slide--right")
         removeClass(".navbar__logo", "js-slide--right")
         removeClass("body", "constrained")
     }
