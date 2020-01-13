@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuLinksData from '../../MenuLinksData'
+import MenuLinksData from '../../DataFiles/MenuLinksData'
 export default function NavigationItemList() {
 
     const itemList = MenuLinksData.map((element) =>
