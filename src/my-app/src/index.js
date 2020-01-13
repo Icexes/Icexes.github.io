@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './styles.css';
-import Header from  "./components/Header"
+import Header from "./components/Header"
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -72,7 +72,7 @@ class Game extends React.Component {
   }
 
   render() {
-    
+
     const history = this.state.history;
     const current = history[history.length - 1];
     const winner = calculateWinner(current.squares);
@@ -82,7 +82,7 @@ class Game extends React.Component {
         'Go to move #' + move :
         'Go to game start';
       return (
-        
+
         <li>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
@@ -98,7 +98,7 @@ class Game extends React.Component {
 
     return (
       <div className="game">
-      <Header/>
+        <Header />
         <div className="game-board">
           <Board
             squares={current.squares}
