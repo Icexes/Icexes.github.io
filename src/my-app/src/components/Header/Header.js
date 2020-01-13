@@ -2,6 +2,7 @@ import React from 'react'
 import MobileMenu from './MobileMenu/MobileMenu'
 import BurgerButton from './MobileMenu/BurgerButton/BurgerButton'
 import NavbarLogo from './NavbarLogo/NavbarLogo'
+import DesktopMenu from './DesktopMenu/DesktopMenu'
 import DesktopSearchField from './DesktopSearchField/DesktopSearchField'
 export default function Header() {
     return (
@@ -12,11 +13,11 @@ export default function Header() {
                         <MobileMenu />
                         <BurgerButton />
                         <NavbarLogo />
-                        
-                        <DesktopSearchField />
+                        <DesktopMenu />                       
                     </div>
                 </div>
             </div>
+            <DesktopSearchField />
         </header>
     )
 }
