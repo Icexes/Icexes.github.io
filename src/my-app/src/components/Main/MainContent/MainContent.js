@@ -1,4 +1,6 @@
 import React from 'react'
+import Cards from './Cards/Cards'
+import mainProjectCardsDataArray from '../../DataFiles/CardsDataArrays'
 export default function MainContent() {
     return (
         <article className="main-content">
@@ -9,7 +11,7 @@ export default function MainContent() {
                         needs of your
                     application may be, there is <b>Spring Project</b> to help you build it. Start small and use just
                     what you need – <b>Spring is modular by design.</b></p>
-
+        <Cards cardsDataArray = {mainProjectCardsDataArray}></Cards>
         </article>
     )
 }
