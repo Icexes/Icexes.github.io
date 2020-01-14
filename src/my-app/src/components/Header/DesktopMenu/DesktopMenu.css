@@ -1,0 +1,41 @@
+.navbar-desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar-desktop-menu__link {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 28px 20px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+}
+
+.search-link--clicked {
+    background-color: #6db33f;
+}
+
+.navbar-desktop-menu__item:last-child>.navbar-desktop-menu__link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    height: 100%;
+    width: 60px;
+
+}
+
+.navbar-desktop-menu__search-icon,
+.navbar-desktop-menu__remove-icon {
+    font-size: 25px;
+}
+
+
+.navbar-desktop-menu__link:hover,
+.navbar-desktop-menu__link_bg-color_green {
+    background-color: #6db33f;
+}

@@ -1,0 +1,11 @@
+.burger-button {
+    display: none;
+}
+
+.burger-button__line {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+}

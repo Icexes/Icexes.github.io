@@ -1,0 +1,14 @@
+.navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    width: 224px;
+    height: 46px;
+    background: url("../../../../../../img/spring-logo.png") no-repeat;
+}
+
+.logo__img:hover {
+    background-position: 0px -47px;
+}
