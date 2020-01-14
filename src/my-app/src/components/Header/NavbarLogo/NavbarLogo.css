@@ -6,7 +6,7 @@
 .logo__img {
     width: 224px;
     height: 46px;
-    background: url("../../../../../../img/spring-logo.png") no-repeat;
+    background: url("../../../img/spring-logo.png") no-repeat;
 }
 
 .logo__img:hover {
