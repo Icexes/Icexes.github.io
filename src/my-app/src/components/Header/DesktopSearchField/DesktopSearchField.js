@@ -1,4 +1,5 @@
 import React from 'react'
+import './DesktopSearchField.css'
 export default function DesktopSearchField() {
     return (
         <div className="search-form-container">

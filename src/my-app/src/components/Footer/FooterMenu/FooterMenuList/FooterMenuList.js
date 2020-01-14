@@ -1,4 +1,5 @@
 import React from 'react'
+import './FooterMenuList.css'
 export default function FooterMenuList() {
     const footerMenuData = [
         {

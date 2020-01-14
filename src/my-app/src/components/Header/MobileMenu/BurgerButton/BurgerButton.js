@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './BurgerButton.css'
 export default function BurgerButton() {
     return (
             <button className = "burger-button">

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './MobileSearchField.css'
 export default function MobileSearchField() {
     return (
         <div className="mobile-search-container">

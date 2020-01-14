@@ -1,4 +1,5 @@
 import React from 'react'
+import './NavbarLogo.css'
 export default function NavbarLogo() {
     return (
         <div className = "navbar__logo">

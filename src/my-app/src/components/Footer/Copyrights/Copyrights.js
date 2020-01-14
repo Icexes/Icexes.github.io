@@ -1,4 +1,5 @@
 import React from 'react'
+import './Copyrights.css'
 export default function Copyrights() {
     return (
         <div className="copyrights">

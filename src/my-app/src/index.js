@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './styles.css';
+
 import Header from "./components/Header"
 function Square(props) {
   return (
@@ -117,7 +118,10 @@ class Game extends React.Component {
 // ========================================
 
 ReactDOM.render(
-  <Game />,
+  <>
+  <Header />
+
+  </>,
   document.getElementById('root')
 );
 
