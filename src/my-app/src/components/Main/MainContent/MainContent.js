@@ -3,7 +3,7 @@ import Cards from './Cards/Cards'
 import mainProjectCardsDataArray from '../../DataFiles/CardsDataArrays'
 import communityProjectsDataArray from '../../DataFiles/CardsDataArrays'
 import projectInTheAtticDataArray from '../../DataFiles/CardsDataArrays'
- 
+import './MainContent.css'
 export default function MainContent() {
     return (
         <article className="main-content">
