@@ -1,0 +1,6 @@
+.footer-menu__list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
+
+}
