@@ -1,0 +1,15 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards--separator-top {
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+.cards--border-top {
+    border-top: 1px solid #ddd;
+}
+
+
