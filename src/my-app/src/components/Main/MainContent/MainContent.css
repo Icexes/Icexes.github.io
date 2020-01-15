@@ -17,3 +17,9 @@
     margin-top: 25px;
     margin-bottom: 50px;
 }
+
+@media (max-width: 999px) {
+    .main-content {
+        margin-top: 10px;
+    }
+}

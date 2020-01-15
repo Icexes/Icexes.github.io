@@ -48,3 +48,11 @@
     text-align: center;
     color: #34302d;
 }
+
+@media (max-width: 999px) {
+    .card {
+        flex-basis: 40%;
+        max-width: none;
+        min-width: 274px;
+    }
+}
