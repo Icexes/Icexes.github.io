@@ -3,7 +3,7 @@ import Card from './Card/Card'
 import './Cards.css'
 export default function Cards(props) {
 
-let cards = props.cardDataArray.map((data) => {
+let cards = props.cardsDataArray.map((data) => {
 
   return  <Card cardData = {data} small = {props.small ? true : false} ></Card>
 }
