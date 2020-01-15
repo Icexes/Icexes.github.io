@@ -1,6 +1,6 @@
 export const mainProjectCardsDataArray = [{
     href: "#",
-    src: "img/icons/spring-boot.png",
+    src: "../../../../../img/icons/spring-boot.png",
     title: "Spring boot",
     description: "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible."
 },
