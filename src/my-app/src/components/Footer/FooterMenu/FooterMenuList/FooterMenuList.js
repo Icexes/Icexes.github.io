@@ -4,7 +4,7 @@ import footerMenuLinksData from '../../../DataFiles/FooterMenuLinksData'
 export default function FooterMenuList() {
 
     const menuList = footerMenuLinksData.map(elem => {
-     return  ( <li id={elem.id} className = "footer-menu__item">
+     return  ( <li key={elem.id} className = "footer-menu__item">
             <a href = {elem.href}> {elem.linkName} </a>
      </li> )
     })
