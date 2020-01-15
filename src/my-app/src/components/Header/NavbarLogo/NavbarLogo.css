@@ -12,3 +12,21 @@
 .logo__img:hover {
     background-position: 0px -47px;
 }
+
+@media (max-width: 999px) {
+.navbar__logo {
+    transition: 0.2s;
+    margin: 0 auto;
+}
+
+.logo__img {
+    width: 102px;
+    height: 30px;
+    background-position: 0px -30px;
+    background-size: 140%;
+}
+
+.logo__img:hover {
+    background-position: 0 -30px;
+}
+}
