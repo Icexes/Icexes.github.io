@@ -1,9 +1,6 @@
 import React from 'react'
 import './Card.css'
 export default function Card(props) {
-console.log(props)
-    const makeCard = () => {
-    }
     return (
 
         <a className={props.small ? "card card--height-s" : "card"} href={props.cardData.href}>
