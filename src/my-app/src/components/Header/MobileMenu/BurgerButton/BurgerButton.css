@@ -9,3 +9,14 @@
     background-color: #fff;
     margin: 2px 0;
 }
+
+@media (max-width:999px) {
+    .burger-button {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.2s;
+    }
+}
