@@ -18,4 +18,12 @@
         color: #807d7b;
         font-size: 18px;
     }
+    .mobile-search-form__submit {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
 }
