@@ -25,6 +25,7 @@ export const mainProjectCardsDataArray = [{
     id: 1,
     href: "#",
     src: springBoot,
+    alt: "Spring Boot",
     title: "Spring boot",
     description: "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible."
 },
@@ -32,12 +33,14 @@ export const mainProjectCardsDataArray = [{
     id: 2,
     href: "#",
     src: springFramework,
+    alt: "Spring Framework",
     title: "Spring Framework",
     description: "Provides core support for dependency infection, transaction management, webapps, data access, messaging and more."
 },
 {id: 3,
     href: "#",
     src: springCloudDataFlow,
+    alt: "Spring Cloud Data Flow",
     title: "Spring Cloud Data Flow",
     description: "An orchestration service for composable data microservice applications on modern runtimes."
 },
@@ -45,6 +48,7 @@ export const mainProjectCardsDataArray = [{
     id: 4,
     href: "#",
     src: springCloud,
+    alt: "Spring Cloud",
     title: "Spring Cloud",
     description: "An orchestration service for composable data microservice applications on modern runtimes."
 },
@@ -52,6 +56,7 @@ export const mainProjectCardsDataArray = [{
     id: 5,
     href: "#",
     src: springData,
+    alt: "Spring Data",
     title: "Spring Data",
     description: "An orchestration service for composable data microservice applications on modern runtimes."
 },
@@ -59,6 +64,7 @@ export const mainProjectCardsDataArray = [{
     id: 6,
     href: "#",
     src: springIntegration,
+    alt: "Spring Integration",
     title: "Spring Integration",
     description: "An orchestration service for composable data microservice applications on modern runtimes."
 },
@@ -66,6 +72,7 @@ export const mainProjectCardsDataArray = [{
     id: 7,
     href: "#",
     src: springBatch,
+    alt: "Spring Batch",
     title: "Spring Batch",
     description: "Simplifies and optimizes the work of processing high-volume batch operations."
 },
@@ -73,6 +80,7 @@ export const mainProjectCardsDataArray = [{
     id: 8,
     href: "#",
     src: springSecurity,
+    alt: "Spring Security",
     title: "Spring Security",
     description: "Protects your application with comprehensive and extensible authentication and authorization support."
 },
@@ -80,6 +88,7 @@ export const mainProjectCardsDataArray = [{
     id: 9,
     href: "#",
     src: springHateoas,
+    alt: "Spring Hateoas",
     title: "Spring Hateoas",
     description: "Simplifies creating REST representations that follow the HATEOAS principle."
 },
@@ -87,6 +96,7 @@ export const mainProjectCardsDataArray = [{
     id: 10,
     href: "#",
     src: springRestDocs,
+    alt: "Spring Rest Docs",
     title: "Spring Rest Docs",
     description: "Document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC searchFieldsArray or REST Assured."
 },
@@ -94,6 +104,7 @@ export const mainProjectCardsDataArray = [{
     id: 11,
     href: "#",
     src: springAmqp,
+    alt: "Spring Amqp",
     title: "Spring Amqp",
     description: "Applies core Spring concepts to the development of AMQP-based messaging solutions."
 },
@@ -101,6 +112,7 @@ export const mainProjectCardsDataArray = [{
     id: 12,
     href: "#",
     src: springMobile,
+    alt: "Spring Mobile",
     title: "Spring Mobile",
     description: "Simplifies the development of mobile web apps through device detection and progressive rendering options."
 },
@@ -108,6 +120,7 @@ export const mainProjectCardsDataArray = [{
     id: 13,
     href: "#",
     src: springForAndroid,
+    alt: "Spring For Android",
     title: "Spring For Android",
     description: "Provides key Spring components for use in developing Android applications."
 },
@@ -115,6 +128,7 @@ export const mainProjectCardsDataArray = [{
     id: 14,
     href: "#",
     src: springWebFlow,
+    alt: "Spring Web Flow",
     title: "Spring Web Flow",
     description: "Supports building web applications with controlled navigation such as checking in for a flight or applying for a loan."
 },
@@ -122,6 +136,7 @@ export const mainProjectCardsDataArray = [{
     id: 15,
     href: "#",
     src: springWebServices,
+    alt: "Spring Web Services",
     title: "Spring Web Services",
     description: "Facilitates the development of contract-first SOAP web services."
 },
@@ -129,6 +144,7 @@ export const mainProjectCardsDataArray = [{
     id: 16,
     href: "#",
     src: springLdap,
+    alt: "Spring Ldap",
     title: "Spring Ldap",
     description: "Simplifies the development of applications using LDAP using Spring's familiar template-based approach."
 },
@@ -136,6 +152,7 @@ export const mainProjectCardsDataArray = [{
     id: 17,
     href: "#",
     src: springSession,
+    alt: "Spring Session",
     title: "Spring Session",
     description: "Spring Session provides an API and implementations for managing a user’s session information."
 },
@@ -143,6 +160,7 @@ export const mainProjectCardsDataArray = [{
     id: 18,
     href: "#",
     src: springShell,
+    alt: "Spring Shell",
     title: "Spring Shell",
     description: "Provides a powerful foundation for building command-line apps using a Spring-based programming model."
 },
@@ -150,6 +168,7 @@ export const mainProjectCardsDataArray = [{
     id: 19,
     href: "#",
     src: springFlo,
+    alt: "Spring Flo",
     title: "Spring Flo",
     description: "A JavaScript library that offers a basic embeddable HTML5 visual builder for pipelines and simple graphs."
 },
@@ -157,6 +176,7 @@ export const mainProjectCardsDataArray = [{
     id: 20,
     href: "#",
     src: springKafka,
+    alt: "Spring Kafka",
     title: "Spring Kafka",
     description: "Provides Familiar Spring Abstractions for Apache Kafka."
 },
@@ -164,6 +184,7 @@ export const mainProjectCardsDataArray = [{
     id: 21,
     href: "#",
     src: springStatemachine,
+    alt: "Spring State machine",
     title: "Spring Statemachine",
     description: "A framework for application developers to use state machine concepts with Spring applications "
 },
@@ -171,6 +192,7 @@ export const mainProjectCardsDataArray = [{
     id: 22,
     href: "#",
     src: springIoPlatform,
+    alt: "Spring Io Platform",
     title: "Spring Io Platform",
     description: "Provides a cohesive, versioned platform for building modernapplications. It is a modular, enterprise-grade distribution that delivers a curated set of dependencies."
 }
