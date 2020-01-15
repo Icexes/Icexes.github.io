@@ -52,3 +52,10 @@
 .search-button__icon {
     font-size: 22px;
 }
+
+@media (max-width: 999px) {
+    .search-form-container {
+
+        display: none;
+    }
+}

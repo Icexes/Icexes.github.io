@@ -39,3 +39,10 @@
 .navbar-desktop-menu__link_bg-color_green {
     background-color: #6db33f;
 }
+
+
+@media (max-width: 999px) {
+    .navbar-desktop-menu {
+        display: none;
+    }
+}
