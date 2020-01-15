@@ -3,26 +3,21 @@ const menuLinksData =
         {
             id: "1",
             href: "#",
-            value: "Home"
+            value: "Projects",
         },
         {
             id: "2",
             href: "#",
-            value: "Projects",
-        },
-        {
-            id: "3",
-            href: "#",
             value: "Guides"
         },
         {
-            id: "4",
+            id: "3",
             href: "#",
             value: "Blog"
         }
         ,
         {
-            id: "5",
+            id: "4",
             href: "#",
             value: "Training & Certification"
         }

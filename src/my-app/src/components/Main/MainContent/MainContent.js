@@ -5,7 +5,7 @@ import './MainContent.css'
 export default function MainContent() {
     return (
         <article className="main-content">
-            <h1 className="main-content__title">Main Project</h1>
+            <h1 className="main-content__title">Main Projects</h1>
             <p className="main-content__subtitle">From configuration to security, web apps to big data - whatever
                         the
                         infostructure
