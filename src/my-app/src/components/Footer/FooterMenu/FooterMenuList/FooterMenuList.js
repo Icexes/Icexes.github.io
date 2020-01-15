@@ -23,10 +23,10 @@ export default function FooterMenuList() {
             linkName: "Newsletter"
         },
     ]
-    const menuList = footerMenuData.map((elem) => {
-        <li id={elem.id} className = "footer-menu__item">
-            <a href = {elem.href}>{elem.linkName}</a>
-        </li>
+    const menuList = footerMenuData.map(elem => {
+     return  ( <li id={elem.id} className = "footer-menu__item">
+            <a href = {elem.href}> {elem.linkName} </a>
+     </li> )
     })
     return (
         <ul className = "footer-menu__list">

@@ -1,5 +1,4 @@
-export default function getMenuLinksData ()  {
-    return (
+const menuLinksData =
     [
         {
             id: "1",
@@ -27,5 +26,5 @@ export default function getMenuLinksData ()  {
             href: "#",
             value: "Training & Certification"
         }
-    ] )
-}
+    ] 
+    export default menuLinksData

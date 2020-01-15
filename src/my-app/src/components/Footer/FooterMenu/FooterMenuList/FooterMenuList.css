@@ -4,3 +4,10 @@
     margin-bottom: 10px;
 
 }
+
+.footer-menu__item {
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 40px;
+    text-transform: uppercase;
+}

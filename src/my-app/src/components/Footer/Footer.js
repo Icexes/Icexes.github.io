@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container-wrap">
                 <FooterMenu />
-                <Copyrights /> 
+                <Copyrights />
             </div>
         </footer>
     )

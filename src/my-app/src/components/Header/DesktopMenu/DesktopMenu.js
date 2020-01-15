@@ -1,9 +1,8 @@
 import React from 'react'
-import getMenuLinksData from "../../DataFiles/MenuLinksData"
+import menuLinksData from "../../DataFiles/MenuLinksData"
 import './DesktopMenu.css'
 
 export default function DesktopMenu() {
-    const menuLinksData = getMenuLinksData();
     const itemList = menuLinksData.map((element) =>
         <li key={element.id} className="navbar-desktop-menu__item">
             <a href={element.href} className="navbar-desktop-menu__link">{element.value}
