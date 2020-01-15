@@ -20,7 +20,7 @@ import springFlo from '../../img/icons/spring-flo.png'
 import springKafka from '../../img/icons/spring-kafka.png'
 import springStatemachine from '../../img/icons/spring-statemachine.png'
 import springIoPlatform from '../../img/icons/spring-io-platform.png'
-   
+
 export const mainProjectCardsDataArray = [{
     id: 1,
     href: "#",
@@ -37,7 +37,8 @@ export const mainProjectCardsDataArray = [{
     title: "Spring Framework",
     description: "Provides core support for dependency infection, transaction management, webapps, data access, messaging and more."
 },
-{id: 3,
+{
+    id: 3,
     href: "#",
     src: springCloudDataFlow,
     alt: "Spring Cloud Data Flow",

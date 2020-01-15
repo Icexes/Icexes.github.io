@@ -7,7 +7,7 @@ export default function MobileMenu() {
         <div className="mobile-menu">
             <div className="container-wrap">
                 <MobileSearchField />
-                <NavigationItemList />               
+                <NavigationItemList />
             </div>
         </div>
     )

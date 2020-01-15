@@ -21,5 +21,5 @@ const menuLinksData =
             href: "#",
             value: "Training & Certification"
         }
-    ] 
-    export default menuLinksData
+    ]
+export default menuLinksData

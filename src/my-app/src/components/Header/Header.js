@@ -14,7 +14,7 @@ export default function Header() {
                         <MobileMenu />
                         <BurgerButton />
                         <NavbarLogo />
-                        <DesktopMenu />                       
+                        <DesktopMenu />
                     </div>
                 </div>
             </div>
