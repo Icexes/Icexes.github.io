@@ -1,8 +1,6 @@
 import React from 'react'
 import Cards from './Cards/Cards'
-import mainProjectCardsDataArray from '../../DataFiles/CardsDataArrays'
-import communityProjectsDataArray from '../../DataFiles/CardsDataArrays'
-import projectInTheAtticDataArray from '../../DataFiles/CardsDataArrays'
+import {mainProjectCardsDataArray,communityProjectsDataArray,projectInTheAtticDataArray} from '../../DataFiles/CardsDataArrays'
 import './MainContent.css'
 export default function MainContent() {
     return (
