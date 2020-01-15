@@ -1,29 +1,9 @@
 import React from 'react'
 import './FooterMenuList.css'
+import footerMenuLinksData from '../../../DataFiles/FooterMenuLinksData'
 export default function FooterMenuList() {
-    const footerMenuData = [
-        {
-            id: 1,
-            href: "#",
-            linkName: "Team"
-        },
-        {
-            id: 2,
-            href: "#",
-            linkName: "Tools"
-        },
-        {
-            id: 3,
-            href: "#",
-            linkName: "Store"
-        },
-        {
-            id: 4,
-            href: "#",
-            linkName: "Newsletter"
-        },
-    ]
-    const menuList = footerMenuData.map(elem => {
+
+    const menuList = footerMenuLinksData.map(elem => {
      return  ( <li id={elem.id} className = "footer-menu__item">
             <a href = {elem.href}> {elem.linkName} </a>
      </li> )

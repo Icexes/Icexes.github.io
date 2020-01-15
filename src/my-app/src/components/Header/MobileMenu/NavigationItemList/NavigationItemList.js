@@ -1,5 +1,5 @@
 import React from 'react'
-import menuLinksData from '../../../DataFiles/MenuLinksData'
+import menuLinksData from '../../../DataFiles/HeaderMenuLinksData'
 import './NavigationItemList.css'
 export default function NavigationItemList() {
     const itemList = menuLinksData.map((element) =>
