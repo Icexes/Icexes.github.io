@@ -33,7 +33,7 @@ export default class Header extends React.Component {
                     </div>
                 </div>
             </div>
-            <DesktopSearchField isOpen={this.state.searchFieldIsOpen} />
+            <DesktopSearchField isOpen={this.state.searchFieldIsOpen} handleInputChange={this.props.handleInputChange}/>
         </header>
         )
     }
