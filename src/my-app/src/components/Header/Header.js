@@ -37,7 +37,7 @@ export default class Header extends React.Component {
                         <div className="navbar">
                             <MobileMenu isOpen={this.state.mobileMenuisOpened} />
                             <BurgerButton onClick={this.handleClickForMobileMenu} isOpen={this.state.mobileMenuisOpened} />
-                            <NavbarLogo />
+                            <NavbarLogo isOpen={this.state.mobileMenuisOpened}/>
                             <DesktopMenu onClick={this.handleClick} />
                         </div>
                     </div>
