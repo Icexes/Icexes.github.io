@@ -16,13 +16,13 @@ export default class Header extends React.Component {
         }
     }
 
-    handleClick = () => {
+    handleSearchLinkClick = () => {
         this.setState(state => ({
             searchFieldIsOpened: !state.searchFieldIsOpened
         }))
     }
-    handleClickForMobileMenu = () => {
-      
+    handleBurgerButtonClick = () => {
+
         this.setState(state => ({
             mobileMenuisOpened: !state.mobileMenuisOpened
         }))
@@ -36,9 +36,9 @@ export default class Header extends React.Component {
                     <div className="container-wrap">
                         <div className="navbar">
                             <MobileMenu isOpen={this.state.mobileMenuisOpened} />
-                            <BurgerButton onClick={this.handleClickForMobileMenu} isOpen={this.state.mobileMenuisOpened} />
-                            <NavbarLogo isOpen={this.state.mobileMenuisOpened}/>
-                            <DesktopMenu onClick={this.handleClick} />
+                            <BurgerButton onClick={this.handleBurgerButtonClick} isOpen={this.state.mobileMenuisOpened} />
+                            <NavbarLogo isOpen={this.state.mobileMenuisOpened} />
+                            <DesktopMenu onClick={this.handleSearchLinkClick} />
                         </div>
                     </div>
                 </div>
