@@ -14,7 +14,6 @@ export default class Header extends React.Component {
     }
 
     handleClick = () => {
-        alert("CLICK")
         this.setState(state => ({
             searchFieldIsOpen: !state.searchFieldIsOpen
         }))       
