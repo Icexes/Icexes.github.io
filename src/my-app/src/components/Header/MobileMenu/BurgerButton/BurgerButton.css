@@ -19,4 +19,7 @@
         justify-content: center;
         transition: 0.2s;
     }
+    .js-slide--right {
+        transform: translateX(270px);
+    }
 }

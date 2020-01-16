@@ -36,7 +36,7 @@ export default class Header extends React.Component {
                     <div className="container-wrap">
                         <div className="navbar">
                             <MobileMenu isOpen={this.state.mobileMenuisOpened} />
-                            <BurgerButton onClick={this.handleClickForMobileMenu} />
+                            <BurgerButton onClick={this.handleClickForMobileMenu} isOpen={this.state.mobileMenuisOpened} />
                             <NavbarLogo />
                             <DesktopMenu onClick={this.handleClick} />
                         </div>
