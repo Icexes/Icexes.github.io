@@ -5,10 +5,9 @@ import './MobileMenu.css'
 export default function MobileMenu(props) {
     return (
         <div className={props.isOpen ? "mobile-menu mobile-menu--visible" : "mobile-menu"}>
-            <div className="container-wrap">
-                <MobileSearchField />
-                <NavigationItemList />
-            </div>
+            <MobileSearchField />
+            <NavigationItemList />
+
         </div>
     )
 }

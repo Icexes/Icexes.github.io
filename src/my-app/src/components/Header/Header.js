@@ -22,7 +22,7 @@ export default class Header extends React.Component {
         }))
     }
     handleClickForMobileMenu = () => {
-        alert('HELLO')
+      
         this.setState(state => ({
             mobileMenuisOpened: !state.mobileMenuisOpened
         }))
