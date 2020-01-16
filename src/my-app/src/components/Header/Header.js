@@ -5,20 +5,40 @@ import NavbarLogo from './NavbarLogo/NavbarLogo'
 import DesktopMenu from './DesktopMenu/DesktopMenu'
 import DesktopSearchField from './DesktopSearchField/DesktopSearchField'
 import './Header.css'
-export default function Header() {
-    return (
-        <header className="header">
+
+
+export default class Header extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {searchFieldIsOpen : false}
+    }
+
+    handleClick = () => {
+        this.setState(state => ({
+            searchFieldIsOpen: !state.searchFieldIsOpen
+        }))       
+    }
+
+    render() {
+
+        return (
+            <header className="header">
             <div className="navbar-wrap">
                 <div className="container-wrap">
                     <div className="navbar">
                         <MobileMenu />
                         <BurgerButton />
                         <NavbarLogo />
-                        <DesktopMenu />
+                        <DesktopMenu onClick={this.handleClick}/>
                     </div>
                 </div>
             </div>
-            <DesktopSearchField />
+            <DesktopSearchField isOpen={this.state.searchFieldIsOpen} />
         </header>
-    )
+        )
+    }
+
+
+
+
 }
