@@ -10,31 +10,40 @@ import './Header.css'
 export default class Header extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {searchFieldIsOpen : false}
+        this.state = {
+            searchFieldIsOpened: false,
+            mobileMenuisOpened: false
+        }
     }
 
     handleClick = () => {
         this.setState(state => ({
-            searchFieldIsOpen: !state.searchFieldIsOpen
-        }))       
+            searchFieldIsOpened: !state.searchFieldIsOpened
+        }))
+    }
+    handleClickForMobileMenu = () => {
+        alert('HELLO')
+        this.setState(state => ({
+            mobileMenuisOpened: !state.mobileMenuisOpened
+        }))
     }
 
     render() {
 
         return (
             <header className="header">
-            <div className="navbar-wrap">
-                <div className="container-wrap">
-                    <div className="navbar">
-                        <MobileMenu />
-                        <BurgerButton />
-                        <NavbarLogo />
-                        <DesktopMenu onClick={this.handleClick}/>
+                <div className="navbar-wrap">
+                    <div className="container-wrap">
+                        <div className="navbar">
+                            <MobileMenu isOpen={this.state.mobileMenuisOpened} />
+                            <BurgerButton onClick={this.handleClickForMobileMenu} />
+                            <NavbarLogo />
+                            <DesktopMenu onClick={this.handleClick} />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <DesktopSearchField isOpen={this.state.searchFieldIsOpen} />
-        </header>
+                <DesktopSearchField isOpen={this.state.searchFieldIsOpened} />
+            </header>
         )
     }
 
