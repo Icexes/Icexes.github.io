@@ -23,7 +23,24 @@ class MainStuff extends React.Component {
 
    handleInputChange = async (e) => {
    await this.setState({searchQuery: e.target.value})
-    alert(this.state.searchQuery)
+    if (this.state.searchQuery) {
+      this.filterCards(mainProjectCardsDataArray)
+    }
+  }
+
+  filterCards = (arrays) =>{
+    if (this.state) {
+      let newArr = arrays.map(arr =>{
+        if(arr.description.indexOf(this.state)) {
+          alert(this.state)
+          alert(arr.id)
+          return arr
+        }
+
+      })
+     
+    }
+
   }
     render() {
       return (
