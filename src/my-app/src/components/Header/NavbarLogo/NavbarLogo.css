@@ -29,4 +29,7 @@
     .logo__img:hover {
         background-position: 0 -30px;
     }
+    .js-slide--right {
+        transform: translateX(270px);
+    }
 }
