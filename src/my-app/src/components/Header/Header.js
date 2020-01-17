@@ -17,9 +17,12 @@ export default class Header extends React.Component {
     }
 
     handleSearchLinkClick = () => {
+        
         this.setState(state => ({
+            
             searchFieldIsOpened: !state.searchFieldIsOpened
-        }))
+        }
+        ))
     }
     handleBurgerButtonClick = () => {
 
@@ -35,15 +38,15 @@ export default class Header extends React.Component {
                 <div className="navbar-wrap">
                     <div className="container-wrap">
                         <div className="navbar">
-                            <MobileMenu isOpen={this.state.mobileMenuisOpened} />
+                            <MobileMenu isOpen={this.state.mobileMenuisOpened} handleInputChange={this.props.handleInputChange}/>
                             <BurgerButton onClick={this.handleBurgerButtonClick} isOpen={this.state.mobileMenuisOpened} />
                             <NavbarLogo isOpen={this.state.mobileMenuisOpened} />
                             <DesktopMenu onClick={this.handleSearchLinkClick} />
                         </div>
                     </div>
                 </div>
-            </div>
-            <DesktopSearchField isOpen={this.state.searchFieldIsOpen} handleInputChange={this.props.handleInputChange}/>
+           
+            <DesktopSearchField isOpen={this.state.searchFieldIsOpened} handleInputChange={this.props.handleInputChange}/>
         </header>
         )
     }

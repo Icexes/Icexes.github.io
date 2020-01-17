@@ -1,6 +1,6 @@
 import React from 'react'
 import './MobileSearchField.css'
-export default function MobileSearchField() {
+export default function MobileSearchField(props) {
     return (
         <div className="mobile-search-container">
             <form action="/search" className="form-inline form-search" method="get">
@@ -8,7 +8,7 @@ export default function MobileSearchField() {
                     <i className="fas fa-search mobile-search-form__search-icon"></i>
                 </button>
                 <input className="mobile-search__input search-field--js" name="q" placeholder="Search..."
-                    type="text" />
+                    type="text" onChange={props.handleInputChange}/>
             </form>
         </div>
     )
