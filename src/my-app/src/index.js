@@ -13,7 +13,8 @@ class MainStuff extends React.Component {
     super(props)
     this.state = {
       mainProjectCardsDataArray: mainProjectCardsDataArray,
-      searchQuery: ''
+      searchQuery: '',
+      notFound: false,
     }
   }
 
@@ -21,7 +22,15 @@ class MainStuff extends React.Component {
     await this.setState({ searchQuery: e.target.value })
     if (this.state.searchQuery) {
       await this.setState({ mainProjectCardsDataArray: this.filterCards(mainProjectCardsDataArray) })
-      
+      if (this.state.mainProjectCardsDataArray.length) {
+        this.setState({notFound: false})
+      }
+      else {
+        this.setState({notFound: true})
+      }
+    }
+    else {
+      await this.setState({ mainProjectCardsDataArray: mainProjectCardsDataArray })
     }
   }
 
@@ -29,19 +38,18 @@ class MainStuff extends React.Component {
     
     let newArr = arrays.filter(arr => {
       if (arr.description.indexOf(this.state.searchQuery)!=-1) {
-       alert(arr.id)       
         return arr
       }
     }
     )
-    console.log(newArr)
+    return newArr
   }
 
   render() {
     return (
       <>
         <Header handleInputChange={this.handleInputChange} />
-        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray}/>
+        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} notFound={this.state.notFound}/>
         <Footer />
 
       </>
