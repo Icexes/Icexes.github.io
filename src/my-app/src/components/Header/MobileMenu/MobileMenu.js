@@ -2,13 +2,12 @@ import React from 'react'
 import MobileSearchField from './MobileSearchField/MobileSearchField'
 import NavigationItemList from './NavigationItemList/NavigationItemList'
 import './MobileMenu.css'
-export default function MobileMenu() {
+export default function MobileMenu(props) {
     return (
-        <div className="mobile-menu">
-            <div className="container-wrap">
-                <MobileSearchField />
-                <NavigationItemList />
-            </div>
+        <div className={props.isOpen ? "mobile-menu mobile-menu--visible" : "mobile-menu"}>
+            <MobileSearchField />
+            <NavigationItemList />
+
         </div>
     )
 }
