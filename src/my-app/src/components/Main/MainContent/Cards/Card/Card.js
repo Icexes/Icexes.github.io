@@ -7,7 +7,7 @@ export default function Card(props) {
                 <img src={props.cardData.src} alt={props.cardData.alt}></img>
             </div>)}
             <p className="card__title">{props.cardData.title}</p>
-            <p className="card__description">{props.cardData.description}</p>
+            <p className="card__description"  dangerouslySetInnerHTML={{__html: props.cardData.description}}></p>
 
         </a>
     )

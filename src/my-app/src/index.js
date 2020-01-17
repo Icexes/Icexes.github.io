@@ -33,8 +33,11 @@ class MainStuff extends React.Component {
       await this.setState({ mainProjectCardsDataArray: mainProjectCardsDataArray })
     }
   }
-
-  filterCards = (arrays) => {
+  
+  addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
+  
+  
+   filterCards = (arrays) => {
     
     let newArr = arrays.filter(arr => {
       if (arr.description.indexOf(this.state.searchQuery)!=-1) {
@@ -42,6 +45,10 @@ class MainStuff extends React.Component {
       }
     }
     )
+    newArr.forEach(elem => {
+      elem.description = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
+    })
+    
     return newArr
   }
 
