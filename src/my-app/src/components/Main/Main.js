@@ -1,11 +1,11 @@
 import React from 'react'
 import './Main.css'
 import MainContent from './MainContent/MainContent'
-export default function Main() {
+export default function Main(props) {
     return (
         <main >
             <div className="container-wrap">
-                <MainContent />
+                <MainContent mainProjectCardsDataArray={props.mainProjectCardsDataArray} notFound={props.notFound}/>
             </div>
         </main>
     )
