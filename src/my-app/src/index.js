@@ -41,14 +41,14 @@ class MainStuff extends React.Component {
     
     let newArr = arrays.filter(arr => {
       
-      if (arr.description.indexOf(this.state.searchQuery)!=-1) {
+      if (arr.description.toLowerCase().indexOf(this.state.searchQuery.toLowerCase())!==-1 || arr.title.toLowerCase().indexOf(this.state.searchQuery.toLowerCase())!==-1) {
         return arr
       }
     }
     )
    // newArr.forEach(elem => {
-    //  elem.description = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
-    //})
+   //   elem.description = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
+   // })
     
     return newArr
   }
