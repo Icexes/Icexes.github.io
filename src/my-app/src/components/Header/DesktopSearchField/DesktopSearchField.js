@@ -6,7 +6,7 @@ export default function DesktopSearchField(props) {
             <div className="container-wrap">
                 <form className="form-search" action="" method="GET">
                     <input className="form-search__input search-field--js" type="text"
-                        placeholder="Search for documentation, guides, and posts..." onChange={props.handleInputChange}/> 
+                        placeholder="Search for documentation, guides, and posts..." onChange={props.handleSearchInputChange}/> 
                     <button className="form-search__submit search-button button" type="submit">
                         <i className="fas fa-search search-button__icon"></i>
                     </button>

@@ -38,7 +38,7 @@ export default class Header extends React.Component {
                 <div className="navbar-wrap">
                     <div className="container-wrap">
                         <div className="navbar">
-                            <MobileMenu isOpen={this.state.mobileMenuisOpened} handleInputChange={this.props.handleInputChange}/>
+                            <MobileMenu isOpen={this.state.mobileMenuisOpened} handleSearchInputChange={this.props.handleSearchInputChange}/>
                             <BurgerButton onClick={this.handleBurgerButtonClick} isOpen={this.state.mobileMenuisOpened} />
                             <NavbarLogo isOpen={this.state.mobileMenuisOpened} />
                             <DesktopMenu onClick={this.handleSearchLinkClick} />
@@ -46,7 +46,7 @@ export default class Header extends React.Component {
                     </div>
                 </div>
            
-            <DesktopSearchField isOpen={this.state.searchFieldIsOpened} handleInputChange={this.props.handleInputChange}/>
+            <DesktopSearchField isOpen={this.state.searchFieldIsOpened} handleSearchInputChange={this.props.handleSearchInputChange}/>
         </header>
         )
     }

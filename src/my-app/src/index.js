@@ -18,7 +18,7 @@ class App extends React.Component {
     }
   }
 
-  handleInputChange = async (e) => {
+  handleSearchInputChange = async (e) => {
     
     await this.setState({ searchQuery: e.target.value })
     console.log("YES", this.state.searchQuery.length)
@@ -63,7 +63,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header handleInputChange={this.handleInputChange} />
+        <Header handleSearchInputChange={this.handleSearchInputChange} />
         <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} isNotFound={this.state.isNotFound}/>
         <Footer />
 
