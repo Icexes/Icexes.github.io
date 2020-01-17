@@ -19,8 +19,11 @@ class MainStuff extends React.Component {
   }
 
   handleInputChange = async (e) => {
+    
     await this.setState({ searchQuery: e.target.value })
+    console.log("YES", this.state.searchQuery.length)
     if (this.state.searchQuery) {
+      console.log("WHY")
       await this.setState({ mainProjectCardsDataArray: this.filterCards(mainProjectCardsDataArray) })
       if (this.state.mainProjectCardsDataArray.length) {
         await this.setState({notFound: false})
@@ -30,7 +33,11 @@ class MainStuff extends React.Component {
       }
     }
     else {
+      console.log("HI")
+    //  console.log(mainProjectCardsDataArray)
+      await this.setState({notFound: false})
       await this.setState({ mainProjectCardsDataArray: mainProjectCardsDataArray })
+      console.log(this.state.mainProjectCardsDataArray)
     }
   }
   
