@@ -23,10 +23,10 @@ class MainStuff extends React.Component {
     if (this.state.searchQuery) {
       await this.setState({ mainProjectCardsDataArray: this.filterCards(mainProjectCardsDataArray) })
       if (this.state.mainProjectCardsDataArray.length) {
-        this.setState({notFound: false})
+        await this.setState({notFound: false})
       }
       else {
-        this.setState({notFound: true})
+        await  this.setState({notFound: true})
       }
     }
     else {
@@ -34,20 +34,21 @@ class MainStuff extends React.Component {
     }
   }
   
-  addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
+  //addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
   
   
    filterCards = (arrays) => {
     
     let newArr = arrays.filter(arr => {
+      
       if (arr.description.indexOf(this.state.searchQuery)!=-1) {
         return arr
       }
     }
     )
-    newArr.forEach(elem => {
-      elem.description = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
-    })
+   // newArr.forEach(elem => {
+    //  elem.description = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
+    //})
     
     return newArr
   }
