@@ -5,7 +5,7 @@ import './MainContent.css'
 export default function MainContent(props) {
     
      const cardsData = () => {
-         if (!props.notFound) {
+         if (!props.isNotFound) {
            return <Cards cardsDataArray={props.mainProjectCardsDataArray}></Cards>
     }
     else {

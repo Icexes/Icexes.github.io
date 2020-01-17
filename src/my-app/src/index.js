@@ -8,13 +8,13 @@ import Main from "./components/Main/Main"
 import { mainProjectCardsDataArray } from './components/DataFiles/CardsDataArrays'
 
 
-class MainStuff extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       mainProjectCardsDataArray: mainProjectCardsDataArray,
       searchQuery: '',
-      notFound: false,
+      isNotFound: false,
     }
   }
 
@@ -26,16 +26,16 @@ class MainStuff extends React.Component {
       console.log("WHY")
       await this.setState({ mainProjectCardsDataArray: this.filterCards(mainProjectCardsDataArray) })
       if (this.state.mainProjectCardsDataArray.length) {
-        await this.setState({notFound: false})
+        await this.setState({isNotFound: false})
       }
       else {
-        await  this.setState({notFound: true})
+        await  this.setState({isNotFound: true})
       }
     }
     else {
       console.log("HI")
     //  console.log(mainProjectCardsDataArray)
-      await this.setState({notFound: false})
+      await this.setState({isNotFound: false})
       await this.setState({ mainProjectCardsDataArray: mainProjectCardsDataArray })
       console.log(this.state.mainProjectCardsDataArray)
     }
@@ -64,7 +64,7 @@ class MainStuff extends React.Component {
     return (
       <>
         <Header handleInputChange={this.handleInputChange} />
-        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} notFound={this.state.notFound}/>
+        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} isNotFound={this.state.isNotFound}/>
         <Footer />
 
       </>
@@ -79,7 +79,7 @@ class MainStuff extends React.Component {
 // ========================================
 ReactDOM.render(
   <>
-    <MainStuff />
+    <App />
   </>,
   document.getElementById('root')
 );
