@@ -53,7 +53,7 @@ class App extends React.Component {
     
     let newArr = arrays.filter(arr => {
       
-      if (arr.description.indexOf(this.state.searchQuery)!==-1) { 
+      if (arr.description.toLowerCase().indexOf(this.state.searchQuery.toLowerCase())!==-1) { 
         return arr
       }
     }
