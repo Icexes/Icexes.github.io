@@ -4,10 +4,6 @@ export default function Card(props) {
     console.log(props,"PROPERTY")
    const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
    
-   if (props.isSearchInputEmpty==false) {
-         //   <p className="card__description"  dangerouslySetInnerHTML={props.isSearchInputEmpty == false ? {__html: addMark(props.cardData.description,props.cardData.description,props.cardData.description.indexOf(props.searchQuery),props.searchQuery.length) : {__html: props.cardData.description} }}></p>
-
-   }
     return (
         <a key={props.cardData.id} className={props.small ? "card card--height-s" : "card"} href={props.cardData.href}>
             {!props.small && (<div className="card__icon-container">

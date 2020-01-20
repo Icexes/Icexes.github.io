@@ -30,7 +30,7 @@ class App extends React.Component {
       await this.setState({ mainProjectCardsDataArray: this.filterCards(mainProjectCardsDataArray.slice()) })
       if (this.state.mainProjectCardsDataArray.length) {
         
-        await this.setState({isNotFound: false, isSearchInputEmpty: false} )
+        await this.setState({isNotFound: false} )
       }
       else {
         await  this.setState({isNotFound: true})
@@ -39,7 +39,7 @@ class App extends React.Component {
     else {
       
       console.log(mainProjectCardsDataArray)
-      await this.setState({isNotFound: false, isSearchInputEmpty: true})
+      await this.setState({isNotFound: false})
       await this.setState({ mainProjectCardsDataArray: mainProjectCardsDataArray.slice() })
 
       
@@ -53,15 +53,12 @@ class App extends React.Component {
     
     let newArr = arrays.filter(arr => {
       
-      if (arr.description.indexOf(this.state.searchQuery)!==-1) { //|| arr.title.toLowerCase().indexOf(this.state.searchQuery.toLowerCase())!==-1
+      if (arr.description.indexOf(this.state.searchQuery)!==-1) { 
         return arr
       }
     }
     )
-    //newArr.forEach(elem => {
-     //elem.description1 = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
-   // })
-    
+
     return newArr
   }
 
@@ -69,7 +66,7 @@ class App extends React.Component {
     return (
       <>
         <Header handleSearchInputChange={this.handleSearchInputChange} />
-        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} isNotFound={this.state.isNotFound} isSearchInputEmpty={this.state.isSearchInputEmpty} searchQuery={this.state.searchQuery}/>
+        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} isNotFound={this.state.isNotFound} searchQuery={this.state.searchQuery}/>
         <Footer />
 
       </>
