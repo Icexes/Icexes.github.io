@@ -1,10 +1,11 @@
 import React from 'react'
 import './Card.css'
 export default function Card(props) {
-    console.log(props)
+    console.log(props,"PROPERTY")
    const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
    
-   if (!props.isSearchInputEmpty) {
+   if (props.isSearchInputEmpty==false) {
+         //   <p className="card__description"  dangerouslySetInnerHTML={props.isSearchInputEmpty == false ? {__html: addMark(props.cardData.description,props.cardData.description,props.cardData.description.indexOf(props.searchQuery),props.searchQuery.length) : {__html: props.cardData.description} }}></p>
 
    }
     return (
@@ -13,7 +14,7 @@ export default function Card(props) {
                 <img src={props.cardData.src} alt={props.cardData.alt}></img>
             </div>)}
             <p className="card__title">{props.cardData.title}</p>
-            <p className="card__description"  dangerouslySetInnerHTML={props.isSearchInputEmpty ? {__html: props.cardData.description} : {__html: addMark(props.cardData.description,props.cardData.description,props.cardData.description)}}></p>
+            <p className="card__description"  dangerouslySetInnerHTML={props.searchQuery ? {__html: addMark(props.cardData.description,props.cardData.description.indexOf(props.searchQuery),props.searchQuery.length)}   :{__html: props.cardData.description,}}></p>
 
         </a>
     )
