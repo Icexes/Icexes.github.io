@@ -3,9 +3,8 @@ import Card from './Card/Card'
 import './Cards.css'
 export default function Cards(props) {
 
-
 let cards = props.cardsDataArray.map((data) => {
-
+  
   return  <Card key={data.id} cardData = {data} small = {props.small ? true : false} searchQuery={props.searchQuery!==undefined ? props.searchQuery : ""}></Card>
 }
   )
