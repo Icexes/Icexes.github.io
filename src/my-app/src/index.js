@@ -20,13 +20,13 @@ class App extends React.Component {
   }
 
   handleSearchInputChange = async (e) => {
-    console.log(this.state.mainProjectCardsDataArray,"STATE")
-    console.log(mainProjectCardsDataArray,"USUAL")
+   
+    
     await this.setState({ searchQuery: e.target.value })
-    console.log("YES", this.state.searchQuery.length)
+    
     if (this.state.searchQuery) {
       
-      console.log("WHY")
+    
       await this.setState({ mainProjectCardsDataArray: this.filterCards(mainProjectCardsDataArray.slice()) })
       if (this.state.mainProjectCardsDataArray.length) {
         
@@ -38,7 +38,6 @@ class App extends React.Component {
     }
     else {
       
-      console.log(mainProjectCardsDataArray)
       await this.setState({isNotFound: false})
       await this.setState({ mainProjectCardsDataArray: mainProjectCardsDataArray.slice() })
 

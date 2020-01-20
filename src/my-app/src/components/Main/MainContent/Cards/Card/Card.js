@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.css'
 export default function Card(props) {
-    console.log(props,"PROPERTY")
+
    const addMark = (str, pos, length) => str.slice(0, pos) + '<mark>' + str.slice(pos, pos + length) + '</mark>' + str.slice(pos + length);
    
     return (

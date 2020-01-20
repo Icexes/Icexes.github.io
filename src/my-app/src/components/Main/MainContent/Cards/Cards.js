@@ -2,8 +2,8 @@ import React from 'react'
 import Card from './Card/Card'
 import './Cards.css'
 export default function Cards(props) {
-console.log(props, "CARDS")
-//if (props.searchQuery)
+
+
 let cards = props.cardsDataArray.map((data) => {
 
   return  <Card key={data.id} cardData = {data} small = {props.small ? true : false} searchQuery={props.searchQuery!==undefined ? props.searchQuery : ""}></Card>
