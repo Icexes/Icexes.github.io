@@ -1,17 +1,17 @@
 import React from 'react'
 import Cards from './Cards/Cards'
-import {communityProjectsDataArray, projectInTheAtticDataArray } from '../../DataFiles/CardsDataArrays'
+import { communityProjectsDataArray, projectInTheAtticDataArray } from '../../DataFiles/CardsDataArrays'
 import './MainContent.css'
 export default function MainContent(props) {
-    
-     const cardsData = () => {
-         if (!props.isNotFound) {
-           return <Cards cardsDataArray={props.mainProjectCardsDataArray} searchQuery={props.searchQuery}></Cards>
+
+    const cardsData = () => {
+        if (!props.isNotFound) {
+            return <Cards cardsDataArray={props.mainProjectCardsDataArray} searchQuery={props.searchQuery}></Cards>
+        }
+        else {
+            return <div className="not-found-container">Not Found!!!!!!</div>
+        }
     }
-    else {
-      return  <div className="not-found-container">Not Found!!!!!!</div>
-    }
-}
     return (
         <article className="main-content">
             <h1 className="main-content__title">Main Projects</h1>
@@ -22,7 +22,7 @@ export default function MainContent(props) {
                     application may be, there is <b>Spring Project</b> to help you build it. Start small and use just
                     what you need – <b>Spring is modular by design.</b></p>
             {cardsData()}
-          
+
             <h2 className="main-content__title main-content__title--size-s">Community Projects</h2>
             <Cards cardsDataArray={communityProjectsDataArray} small={true}></Cards>
             <h2 className="main-content__title main-content__title--size-s">Projects in the Attic</h2>

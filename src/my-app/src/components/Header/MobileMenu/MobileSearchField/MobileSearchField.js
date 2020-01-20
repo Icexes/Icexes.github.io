@@ -8,7 +8,7 @@ export default function MobileSearchField(props) {
                     <i className="fas fa-search mobile-search-form__search-icon"></i>
                 </button>
                 <input className="mobile-search__input search-field--js" name="q" placeholder="Search..."
-                    type="text" onChange={props.handleSearchInputChange}/>
+                    type="text" onChange={props.handleSearchInputChange} />
             </form>
         </div>
     )

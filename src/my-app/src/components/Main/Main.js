@@ -5,7 +5,7 @@ export default function Main(props) {
     return (
         <main >
             <div className="container-wrap">
-                <MainContent mainProjectCardsDataArray={props.mainProjectCardsDataArray} isNotFound={props.isNotFound} searchQuery={props.searchQuery}/>
+                <MainContent mainProjectCardsDataArray={props.mainProjectCardsDataArray} isNotFound={props.isNotFound} searchQuery={props.searchQuery} />
             </div>
         </main>
     )

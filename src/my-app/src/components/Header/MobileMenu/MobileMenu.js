@@ -5,7 +5,7 @@ import './MobileMenu.css'
 export default function MobileMenu(props) {
     return (
         <div className={props.isOpen ? "mobile-menu mobile-menu--visible" : "mobile-menu"}>
-            <MobileSearchField handleSearchInputChange={props.handleSearchInputChange}/>
+            <MobileSearchField handleSearchInputChange={props.handleSearchInputChange} />
             <NavigationItemList />
 
         </div>
