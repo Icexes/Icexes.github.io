@@ -15,6 +15,7 @@ class App extends React.Component {
       mainProjectCardsDataArray: mainProjectCardsDataArray.slice(),
       searchQuery: '',
       isNotFound: false,
+      isSearchInputEmpty: true
     }
   }
 
@@ -24,20 +25,23 @@ class App extends React.Component {
     await this.setState({ searchQuery: e.target.value })
     console.log("YES", this.state.searchQuery.length)
     if (this.state.searchQuery) {
+      
       console.log("WHY")
       await this.setState({ mainProjectCardsDataArray: this.filterCards(mainProjectCardsDataArray.slice()) })
       if (this.state.mainProjectCardsDataArray.length) {
-        await this.setState({isNotFound: false})
+        
+        await this.setState({isNotFound: false, isSearchInputEmpty: false} )
       }
       else {
         await  this.setState({isNotFound: true})
       }
     }
     else {
-      console.log("HI")
-    //  console.log(mainProjectCardsDataArray)
-      await this.setState({isNotFound: false})
+      
+      console.log(mainProjectCardsDataArray)
+      await this.setState({isNotFound: false, isSearchInputEmpty: true})
       await this.setState({ mainProjectCardsDataArray: mainProjectCardsDataArray.slice() })
+
       
     }
   }
@@ -54,9 +58,9 @@ class App extends React.Component {
       }
     }
     )
-    newArr.forEach(elem => {
-     elem.description = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
-    })
+    //newArr.forEach(elem => {
+     //elem.description1 = this.addMark(elem.description, elem.description.indexOf(this.state.searchQuery),this.state.searchQuery.length)
+   // })
     
     return newArr
   }
@@ -65,7 +69,7 @@ class App extends React.Component {
     return (
       <>
         <Header handleSearchInputChange={this.handleSearchInputChange} />
-        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} isNotFound={this.state.isNotFound}/>
+        <Main mainProjectCardsDataArray={this.state.mainProjectCardsDataArray} isNotFound={this.state.isNotFound} isSearchInputEmpty={this.state.isSearchInputEmpty} searchQuery={this.state.searchQuery}/>
         <Footer />
 
       </>

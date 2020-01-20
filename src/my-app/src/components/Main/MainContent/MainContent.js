@@ -6,7 +6,7 @@ export default function MainContent(props) {
     
      const cardsData = () => {
          if (!props.isNotFound) {
-           return <Cards cardsDataArray={props.mainProjectCardsDataArray}></Cards>
+           return <Cards cardsDataArray={props.mainProjectCardsDataArray} isSearchInputEmpty={props.isSearchInputEmpty} searchQuery={props.searchQuery}></Cards>
     }
     else {
       return  <div className="not-found-container">Not Found!!!!!!</div>
