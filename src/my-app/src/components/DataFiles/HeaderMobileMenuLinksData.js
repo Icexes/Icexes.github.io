@@ -1,4 +1,4 @@
-const menuLinksData =
+const menuLinks =
     [
         {
             id: "1",
@@ -38,5 +38,5 @@ const menuLinksData =
             desktop: true 
         }
     ]
-export default menuLinksData
+export default menuLinks
 

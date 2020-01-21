@@ -1,12 +1,12 @@
 import React from 'react'
-import menuLinksData from '../../../DataFiles/HeaderMobileMenuLinksData'
+import menuLinks from '../../../DataFiles/HeaderMobileMenuLinks'
 
 import './NavigationItemList.css'
 export default function NavigationItemList() {
-    const filteredMenuLinksData = menuLinksData.filter(elem => {
+    const filteredMenuLinks = menuLinks.filter(elem => {
         return elem.mobile ? true : false 
     })
-    const itemList = filteredMenuLinksData.map((element) =>
+    const itemList = filteredMenuLinks.map((element) =>
         <li key={element.id} className="mobile-menu__navbar-link">
             <a href={element.href}>{element.value}
                 <i className="fa fa-angle-right"></i></a>
