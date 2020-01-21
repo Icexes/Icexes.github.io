@@ -21,7 +21,7 @@ import springKafka from '../../img/icons/spring-kafka.png'
 import springStatemachine from '../../img/icons/spring-statemachine.png'
 import springIoPlatform from '../../img/icons/spring-io-platform.png'
 
-export const mainProjectCardsDataArray = [{
+export const mainProjects = [{
     id: 1,
     href: "#",
     src: springBoot,
@@ -198,7 +198,7 @@ export const mainProjectCardsDataArray = [{
     description: "Provides a cohesive, versioned platform for building modernapplications. It is a modular, enterprise-grade distribution that delivers a curated set of dependencies."
 }
 ]
-export const communityProjectsDataArray = [
+export const communityProjects = [
     {
         id: 1,
         href: "#",
@@ -213,7 +213,7 @@ export const communityProjectsDataArray = [
     },
 ]
 
-export const projectInTheAtticDataArray = [
+export const projectsInTheAttic = [
     {
         id: 1,
         href: "#",

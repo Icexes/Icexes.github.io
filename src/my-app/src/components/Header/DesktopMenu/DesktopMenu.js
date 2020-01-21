@@ -1,9 +1,12 @@
 import React from 'react'
-import menuLinksData from "../../DataFiles/HeaderDesktopMenuLinksData"
+import menuLinksData from "../../DataFiles/HeaderMobileMenuLinksData"
 import './DesktopMenu.css'
 
 export default function DesktopMenu(props) {
-    const itemList = menuLinksData.map((element) =>
+    const filteredmenuLinksData = menuLinksData.filter(elem => {
+        return elem.desktop ? true : false
+    })
+    const itemList = filteredmenuLinksData.map((element) =>
         <li key={element.id} className="navbar-desktop-menu__item">
             <a href={element.href} className="navbar-desktop-menu__link">{element.value}
             </a>
