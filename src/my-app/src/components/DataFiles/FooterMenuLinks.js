@@ -1,4 +1,4 @@
-const footerMenuData = [
+const menuLinks = [
     {
         id: 1,
         href: "#",
@@ -20,4 +20,4 @@ const footerMenuData = [
         linkName: "Newsletter"
     },
 ]
-export default footerMenuData
+export default menuLinks
