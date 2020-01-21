@@ -1,5 +1,5 @@
 import React from 'react'
-import menuLinks from '../../../DataFiles/MenuLinks'
+import menuLinks from '../../../DataFiles/HeaderMenuLinks'
 
 import './NavigationItemList.css'
 export default function NavigationItemList() {

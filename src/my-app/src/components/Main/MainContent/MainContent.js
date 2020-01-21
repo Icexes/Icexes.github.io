@@ -1,6 +1,6 @@
 import React from 'react'
 import Cards from './Cards/Cards'
-import { mainProjects, communityProjects, projectsInTheAttic } from '../../DataFiles/CardsDataArrays'
+import { mainProjects, communityProjects, projectsInTheAttic } from '../../DataFiles/Cards'
 import './MainContent.css'
 export default function MainContent(props) {
 
