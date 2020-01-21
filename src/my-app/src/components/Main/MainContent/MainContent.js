@@ -7,9 +7,9 @@ export default function MainContent(props) {
     const filterCards = (cards) => {
 
         let sortedCards = cards.filter(arr => {
-            if (arr.description.toLowerCase().indexOf(props.searchQuery) !== -1) {
-                return arr
-            }
+           // if (arr.description.toLowerCase().indexOf(props.searchQuery) !== -1) {
+            return arr.description.match(new RegExp( props.searchQuery, "i")) 
+            
         }
         )
         return sortedCards
