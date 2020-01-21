@@ -10,7 +10,7 @@ export default function Card(props) {
                 <img src={props.cardData.src} alt={props.cardData.alt}></img>
             </div>)}
             <p className="card__title">{props.cardData.title}</p>
-            <p className="card__description" dangerouslySetInnerHTML={props.searchQuery ? { __html: addMark(props.cardData.description, props.cardData.description.toLowerCase().indexOf(props.searchQuery.toLowerCase()), props.searchQuery.length) } : { __html: props.cardData.description, }}></p>
+            <p className="card__description" dangerouslySetInnerHTML={props.searchQuery ? { __html: addMark(props.cardData.description, props.cardData.description.toLowerCase().indexOf(props.searchQuery), props.searchQuery.length) } : { __html: props.cardData.description, }}></p>
 
         </a>
     )

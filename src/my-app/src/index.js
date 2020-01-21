@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
       <>
         <Header handleSearchInputChange={this.handleSearchInputChange} />
-        <Main searchQuery={this.state.searchQuery} />
+        <Main searchQuery={this.state.searchQuery.toLocaleLowerCase()} />
         <Footer />
       </>
 
