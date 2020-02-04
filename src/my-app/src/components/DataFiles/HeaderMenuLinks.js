@@ -32,8 +32,8 @@ const menuLinks =
         ,
         {
             id: "5",
-            href: "#",
-            value: "Training & Certification",
+            href: "/login",
+            value: "Training & Certifications",
             mobile: true,
             desktop: true 
         }
