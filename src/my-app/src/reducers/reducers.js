@@ -5,7 +5,7 @@ const initialState = {
     mobileMenuIsOpen: false
 }
 
-function app(state=initialState, action) {
+ export default function app(state=initialState, action) {
     switch(action.type) {
         case TOGGLE_SEARCH_FIELD :
             return Object.assign({}, state, {searchFieldIsOpen : !state.searchFieldIsOpen})

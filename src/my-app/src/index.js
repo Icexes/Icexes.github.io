@@ -6,8 +6,19 @@ import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import Main from "./components/Main/Main"
 import AutorizationForm from "./components/AutorizationForm/AutorizationForm";
-
+import {toggleMobileMenu, toggleSearchField} from './actions/actions'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
+
+import { createStore } from 'redux'
+import app from './reducers/reducers'
+
+
+let store = createStore(app)
+console.log(store.getState())
+const unsubscribe = store.subscribe(() => console.log(store.getState()))
+store.dispatch(toggleMobileMenu())
+
+
 class App extends React.Component {
   constructor(props) {
     super(props)
