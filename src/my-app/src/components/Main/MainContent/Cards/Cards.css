@@ -1,0 +1,21 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards--separator-top {
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+.cards--border-top {
+    border-top: 1px solid #ddd;
+}
+
+.not-found-container {
+    font-size: 46px;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+

@@ -1,0 +1,25 @@
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 999px) {
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-200%);
+        transition: 0.2s;
+
+        background-color: #34302d;
+        width: 270px;
+        height: 100%;
+        border-right: 1px solid #2b2825;
+    }
+
+    .mobile-menu--visible {
+        position: fixed;
+        overflow: hidden;
+        transform: translateX(0%);
+    }
+}

@@ -1,0 +1,35 @@
+.navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    width: 224px;
+    height: 46px;
+    background: url("../../../img/spring-logo.png") no-repeat;
+}
+
+.logo__img:hover {
+    background-position: 0px -47px;
+}
+
+@media (max-width: 999px) {
+    .navbar__logo {
+        transition: 0.2s;
+        margin: 0 auto;
+    }
+
+    .logo__img {
+        width: 102px;
+        height: 30px;
+        background-position: 0px -30px;
+        background-size: 140%;
+    }
+
+    .logo__img:hover {
+        background-position: 0 -30px;
+    }
+    .js-slide--right {
+        transform: translateX(270px);
+    }
+}

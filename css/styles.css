@@ -164,11 +164,11 @@ p {
     display: none;
 }
 
-.mobile-menu__button {
+.burger-button {
     display: none;
 }
 
-.mobile-menu__line {
+.burger-button__line {
     display: block;
     width: 20px;
     height: 3px;
@@ -419,7 +419,7 @@ p {
 
 
 
-    .mobile-menu__button {
+    .burger-button {
         display: flex;
         border: none;
         background-color: transparent;
@@ -454,7 +454,6 @@ p {
         min-width: 274px;
     }
 }
-
 
 .hidden {
     display: none;

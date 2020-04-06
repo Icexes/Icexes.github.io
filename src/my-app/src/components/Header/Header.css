@@ -1,0 +1,25 @@
+.navbar-wrap {
+    border-top: 5px solid #6db33f;
+    background-color: #34302d;
+    top: 0px;
+    position: relative;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 999px) {
+
+    .navbar-wrap {
+        border: none;
+    }
+
+    .navbar {
+        height: 50px;
+        align-items: center;
+        transition: all .25s;
+    }
+}

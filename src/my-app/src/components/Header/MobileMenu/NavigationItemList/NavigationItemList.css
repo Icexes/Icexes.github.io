@@ -1,0 +1,27 @@
+@media (max-width: 999px) {
+     .navigation-item-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    li.mobile-menu__navbar-link {
+        list-style: none;
+    }
+
+    li.mobile-menu__navbar-link a {
+        display: block;
+        color: #f1f1f1;
+        text-decoration: none;
+
+        line-height: 15px;
+        border-bottom: 1px solid #474441;
+        padding: 15px;
+    }
+
+    li.mobile-menu__navbar-link a i {
+        position: absolute;
+        right: 20px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
